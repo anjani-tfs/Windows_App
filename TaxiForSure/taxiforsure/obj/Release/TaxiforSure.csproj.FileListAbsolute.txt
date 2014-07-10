@@ -1,0 +1,962 @@
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Extensions.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Extensions.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+C:\Users\Shantanu\Desktop\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Shantanu\tfs\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Desktop\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiforSure_5_3_2014\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Documents\rhaegan\tfs_work\TaxiforSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure_Release_AnyCPU.xap
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\CancelBooking.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Shantanu\Documents\rhaegan\TaxiforSure\TFS_WORK\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiForSure\TaxiforSure\obj\Release\CancelBooking.g.cs
+C:\Users\Ankit Khullar\Downloads\Compressed\TaxiForSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\AppManifest.xaml
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\TaxiForSure.xap
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\App.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\CancelBooking.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\HomePage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\Location.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\MainPage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\PanoramaPage1.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\PricePage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\SelectCab.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\SelectCity.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.dll
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+D:\TaxiForSure\TaxiForSure\TaxiforSure\obj\Release\XapCacheFile.xml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\TaxiforSure.pdb
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\AppManifest.xaml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\TaxiForSure.xap
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\Newtonsoft.Json.xml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.xml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.csprojResolveAssemblyReference.cache
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\App.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\BookingConfirmed.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\CancelBooking.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\HomePage.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\Location.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\LocationSelect.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\MainPage.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\PanoramaPage1.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\PassengerDetail.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\PricePage.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\SelectCab.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\SelectCity.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\SettingsPage.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TimePickerPage.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TrackMyTaxi.g.cs
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.g.resources
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.Resources.AppResources.resources
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.csproj.GenerateResource.Cache
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.dll
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\TaxiforSure.pdb
+C:\Users\Anjani-Serendipity\Desktop\TaxiForSure\TaxiforSure\obj\Release\XapCacheFile.xml

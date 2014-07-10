@@ -1,0 +1,352 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TaxiforSure.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" BackKeyPress="PhoneApplicationPage_BackKeyPress_1">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <ControlTemplate x:Key="ListPickerControlTemplate" TargetType="toolkit:ListPicker">
+            <StackPanel>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="PickerStates">
+                        <VisualState x:Name="Normal"/>
+                        <VisualState x:Name="Highlighted">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="UserControl"
+									Storyboard.TargetProperty="Foreground"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource PhoneTextBoxForegroundBrush}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="Border"
+									Storyboard.TargetProperty="Background"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource PhoneTextBoxEditBackgroundColor}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="Border"
+									Storyboard.TargetProperty="BorderBrush"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource PhoneTextBoxEditBorderBrush}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="Border"
+									Storyboard.TargetProperty="Background"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource TransparentBrush}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="Border"
+									Storyboard.TargetProperty="BorderBrush"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource PhoneDisabledBrush}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                                <ObjectAnimationUsingKeyFrames
+									Storyboard.TargetName="UserControl"
+									Storyboard.TargetProperty="Foreground"
+									Duration="0">
+                                    <DiscreteObjectKeyFrame
+										Value="{StaticResource PhoneDisabledBrush}"
+										KeyTime="0"/>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Grid>
+
+                    <Border x:Name="Border"
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="32"/>
+                            </Grid.ColumnDefinitions>
+                            <UserControl x:Name="UserControl" Foreground="{TemplateBinding Foreground}">
+                                <StackPanel>
+                                    <TextBlock x:Name="MultipleSelectionModeSummary" Margin="8 8 0 8" />
+                                    <Canvas x:Name="ItemsPresenterHost" MinHeight="46">
+                                        <ItemsPresenter x:Name="ItemsPresenter">
+                                            <ItemsPresenter.RenderTransform>
+                                                <TranslateTransform x:Name="ItemsPresenterTranslateTransform"/>
+                                            </ItemsPresenter.RenderTransform>
+                                        </ItemsPresenter>
+                                    </Canvas>
+                                </StackPanel>
+                            </UserControl>
+                            <Image Margin="5,20,3,3" Source="/Assets/Icons/Combo.png" Stretch="None" Grid.Column="1" VerticalAlignment="Top"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </StackPanel>
+        </ControlTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ImageBgBrush}" toolkit:TurnstileFeatherEffect.FeatheringIndex="0">
+
+        <Grid x:Name="ContentGrid" toolkit:TurnstileFeatherEffect.FeatheringIndex="1">
+
+            <StackPanel VerticalAlignment="Top">
+                <phone:Panorama Title="Bangalore" Foreground="Black" x:Name="MainPanorama" SelectionChanged="MainPanorama_OnSelectionChanged" Height="626" Margin="-10,0,0,0">
+                    <phone:Panorama.TitleTemplate>
+                        <DataTemplate>
+                            <StackPanel Grid.Row="0" Margin="12,40,0,28">
+                                <TextBlock Foreground="Black" Margin="0,0,0,0" Text="TaxiForSure" Style="{StaticResource PhoneTextNormalStyle}" Width="294"/>
+                                <TextBlock Foreground="Black" x:Name="textBlock_cityName" Tap="ChangeCity" Text="{Binding}" Margin="0,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </phone:Panorama.TitleTemplate>
+
+
+                    <!--Panorama item one-->
+                    <phone:PanoramaItem>
+                        <Grid>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="100"/>
+                                    <RowDefinition Height="10"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="100"/>
+                                </Grid.RowDefinitions>
+                                <Grid Margin="0,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Height="32" Source="/Assets/Icons/From.png" />
+                                    <TextBlock Grid.Column="2" Text="Pickup" FontSize="35" Opacity=".83" FontWeight="Light" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave" Tap="TextBlock_Tap_1"/>
+                                </Grid>
+                                <!--<Button Name="FromButton1" Grid.Row="1" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="330" HorizontalAlignment="Left" Foreground="Black" Margin="24,0" Content="Select Pickup Location" Background="{x:Null}" Click="Button_Click" FontStyle="Italic"/>-->
+
+                                <TextBlock Grid.Row="1" Margin="60,0,30,0" x:Name="FromButton1" Text="Select Pickup Location" Tap="TextBlock_Tap_1" FontSize="25" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave"></TextBlock>
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="313*"/>
+                                        <ColumnDefinition Width="57*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Height="32" Source="/Assets/Icons/To.png" />
+                                    <TextBlock Grid.Column="2" Text="Drop" FontSize="35" Opacity=".83" FontWeight="Light" Grid.ColumnSpan="2" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave" Tap="TextBlock_Tap_2"/>
+                                </Grid>
+                                <!--<Button Name="ToButton1" Grid.Row="4" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="330" Margin="24,0" HorizontalAlignment="Left" Foreground="Black" Content="Select Drop Location" Background="{x:Null}" Click="Button_Click_1" FontStyle="Italic" />-->
+                                <TextBlock Grid.Row="4" Name="ToButton1" Margin="60,0,30,0" Text="Select Drop Location" Tap="TextBlock_Tap_2" FontSize="25" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave"></TextBlock>
+                            </Grid>
+
+                        </Grid>
+
+
+
+                        <!--Double line list with text wrapping-->
+                    </phone:PanoramaItem>
+
+                    <!--Panorama item two-->
+                    <phone:PanoramaItem>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="100" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" MinHeight="47"/>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="Auto" MinHeight="47"/>
+                                <RowDefinition Height="72"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Height="32" Source="/Assets/Icons/From.png"/>
+                                <TextBlock Grid.Column="2" Text="Pickup" FontSize="35" Opacity=".83" FontWeight="Light" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave" Tap="TextBlock_Tap_1"/>
+                            </Grid>
+                            <!--<Button Name="FromButton2" Content="Choose Pickup Location" Grid.Row="1" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="330" HorizontalAlignment="Left" Foreground="Black" Margin="24,0,0,0" Background="{x:Null}" Click="Button_Click" FontStyle="Italic"/>-->
+
+                            <TextBlock Grid.Row="1" Margin="65,0,30,0" x:Name="FromButton2" Text="Select Pickup Location" Tap="TextBlock_Tap_1" FontSize="25" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave"></TextBlock>
+
+
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Height="32" Source="/Assets/Icons/To.png"  />
+                                <TextBlock Grid.Column="2" Text="Drop" FontSize="35" Opacity=".83" FontWeight="Light" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave" Tap="TextBlock_Tap_2"/>
+                            </Grid>
+                            <!--<Button Name="ToButton2" Grid.Row="3" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="330" Margin="24,0,0,0" HorizontalAlignment="Left" Foreground="Black" Content="Enter Drop Location"  Background="{x:Null}" Click="Button_Click_1" FontStyle="Italic" />-->
+                            <TextBlock Grid.Row="4" Name="ToButton2" Margin="65,0,30,0" Text="Select Drop Location" Tap="TextBlock_Tap_2" FontSize="25" MouseLeftButtonDown="FromButton1_MouseLeftButtonDown" MouseLeftButtonUp="FromButton1_MouseLeftButtonUp" MouseLeave="FromButton1_MouseLeave"></TextBlock>
+                            <StackPanel Grid.Row="5" Orientation="Horizontal">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Margin="20,0,0,0" Orientation="Horizontal">
+                                        <Image Height="32" Source="/Assets/Icons/Calendar.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Right"/>
+                                        <TextBlock Text="Date" FontSize="35" Opacity=".83" FontWeight="Light"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Margin="160,0,0,0" Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Height="32" Source="/Assets/Icons/Time.png" Margin="0,3,0,0" HorizontalAlignment="Right"/>
+                                        <TextBlock Text="Time" FontSize="35" Opacity=".83" FontWeight="Light" Margin="0,0,0,8"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="6">
+                                <toolkit:DatePicker Name="BookDatePicker" Margin="0,0,0,0" BorderBrush="#FFbdbdbd" BorderThickness="1" Foreground="Black" />
+                                <toolkit:TimePicker Name="BookTimePicker" Margin="110,0,0,0" BorderBrush="#FFbdbdbd" Foreground="Black" BorderThickness="1" Width="151" PickerPageUri="/TimePickerPage.xaml" />
+                            </StackPanel>
+
+
+                            <Grid Grid.Row="4" Margin="0,0,0,33" Grid.RowSpan="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <!--<Image Height="32" Source="/Assets/Icons/Calendar.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Right"/>
+								<TextBlock Grid.Column="2" Text="Date" FontSize="35" Opacity=".83" FontWeight="Light"/>-->
+                            </Grid>
+                            <!--<toolkit:DatePicker Name="BookDatePicker" Grid.Row="4" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="151" Margin="24,41,0,8" HorizontalAlignment="Left" Foreground="Black" Grid.RowSpan="2"/>-->
+                            <Grid Grid.Row="6" Margin="0,0,0,10" Grid.RowSpan="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <!--<Image VerticalAlignment="Top" Height="32" Source="/Assets/Icons/Time.png" Margin="0,3,0,0" HorizontalAlignment="Right"/>
+								<TextBlock Grid.Column="2" Text="Time" FontSize="35" Opacity=".83" FontWeight="Light" Margin="0,-8,0,8"/>-->
+                            </Grid>
+                            <!--<toolkit:TimePicker Name="BookTimePicker" Grid.Row="6" BorderBrush="#FFbdbdbd" Foreground="Black" BorderThickness="1" Width="151" Margin="24,29,0,20" HorizontalAlignment="Left" Grid.RowSpan="2"/>-->
+                        </Grid>
+
+
+
+                        <!--Double line list no text wrapping-->
+                    </phone:PanoramaItem>
+                </phone:Panorama>
+
+
+            </StackPanel>
+        </Grid>
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+			aligned on common boundaries.  The image has a top margin of -32px to
+			account for the System Tray. Set this to 0 (or remove the margin altogether)
+			if the System Tray is hidden.
+
+			Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" IsHitTestVisible="False" />-->
+        <Grid Background="#FFffd800"  Height="100" Margin="0,20,0,0" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="Auto"/>
+
+
+            </Grid.RowDefinitions>
+            <Grid Margin="142,10,35,8" HorizontalAlignment="Center" Grid.ColumnSpan="2" Width="303">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Width="55" VerticalAlignment="Top" Grid.RowSpan="2" Source="/Assets/Icons/Taxi.png"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Foreground="Black" FontWeight="Bold" FontSize="64" LineStackingStrategy="BlockLineHeight" LineHeight="50" Text="PICK" Margin="0,12,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Black" FontWeight="Bold" FontSize="32" LineStackingStrategy="BlockLineHeight" LineHeight="22" Text="NOW" Margin="3,0,0,0" x:Name="PickName"/>
+                        <TextBlock Foreground="Black"  FontSize="21" LineStackingStrategy="BlockLineHeight" LineHeight="22" HorizontalAlignment="Right" VerticalAlignment="Bottom" Opacity=".83" Height="36" Margin="0,0,-226,0" Width="321" Grid.Column="2">
+						<Run Text="       after" x:Name="PickTime" />
+						<Run Text=" 17:00" x:Name="PickTime2"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+
+
+
+            </Grid>
+
+
+
+        </Grid>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="Black" ForegroundColor="#FFffd800">
+            <shell:ApplicationBarIconButton Text="Next" x:Name="ProceedBtn" Click="ProceedBtn_OnClick" IconUri="Assets/next.png"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="View Bookings and Track Taxi" Click="ApplicationBarMenuItem_OnClick_2"/>
+                <!--<shell:ApplicationBarMenuItem Text="Price Chart" Click="ApplicationBarMenuItem_OnClick"/>-->
+                <shell:ApplicationBarMenuItem Text="Change City" Click="ApplicationBarMenuItem_OnClick4"/>
+                <shell:ApplicationBarMenuItem Text="Rate and Review" Click="ApplicationBarMenuItem_OnClick_3"/>
+                <shell:ApplicationBarMenuItem Text="Feedback" Click="GiveFeedback"/>
+                <shell:ApplicationBarMenuItem Text="Settings" Click="Settings_Click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileFeatherTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileFeatherTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileFeatherTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileFeatherTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+</phone:PhoneApplicationPage>

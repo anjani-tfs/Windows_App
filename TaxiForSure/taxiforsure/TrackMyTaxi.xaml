@@ -1,0 +1,136 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TaxiforSure.TrackMyTaxi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="ListItemTemplate">
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,18">
+                <TextBlock FontSize="16"  Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                                    <Run Text="Pickup: " FontWeight="Bold"/>
+                                    <Run Text="{Binding From}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                                    <Run Text="Drop: " FontWeight="Bold"/>
+                                    <Run Text="{Binding To}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Time: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Time}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Fare: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Fare}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Booking ID: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingId}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Booking Status: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingStatus}"/>
+                </TextBlock>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="CurrentListItemTemplate">
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,18">
+                <toolkit:ContextMenuService.ContextMenu>
+
+                    <toolkit:ContextMenu IsZoomEnabled="True" x:Name="ContextMenu" >
+
+                        <toolkit:MenuItem x:Name="Delete" Tag="{Binding}" Header="Cancel Booking" Click="Delete_OnClick"/>
+
+
+                    </toolkit:ContextMenu>
+
+                </toolkit:ContextMenuService.ContextMenu>
+                <TextBlock FontSize="16"  Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                                    <Run Text="Pickup: " FontWeight="Bold"/>
+                                    <Run Text="{Binding From}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                                    <Run Text="Drop: " FontWeight="Bold"/>
+                                    <Run Text="{Binding To}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Time: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Time}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Fare: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Fare}"/>
+                </TextBlock>
+                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                                    <Run Text="Booking ID: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingId}"/>
+                </TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ImageBgBrush}">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="12"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Name="WaitingBar">
+            <TextBlock HorizontalAlignment="Center" Foreground="Black" Text="Please wait..."></TextBlock>
+            <ProgressBar IsIndeterminate="True" Foreground="#FFffd800" Width="473" />
+        </StackPanel>
+
+        <!--Pivot Control-->
+        <phone:Pivot Foreground="Black" x:Name="MainPivot" SelectedIndex="1">
+            <phone:Pivot.TitleTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontSize="83" FontWeight="ExtraLight" LineStackingStrategy="BlockLineHeight" LineHeight="85" Margin="0,0,0,30"/>
+                </DataTemplate>
+            </phone:Pivot.TitleTemplate>
+               
+            <!--<phone:PivotItem Margin="24,28,24,0" x:Name="Pivot1">
+                <phone:PivotItem.Header>
+                    <TextBlock Text="booking status" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0" x:Name="BkStatus" Foreground="#FFffc600"/>
+                </phone:PivotItem.Header>
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock Text="BOOKING ID" FontWeight="Bold" FontSize="21" Opacity=".83"/>
+                    <TextBox Name="BookingIdBox" Style="{StaticResource TxtBoxStyle}" BorderBrush="#FFc8c8c9" Width="290" Margin="0,10" Background="{x:Null}" Text="TFS-PP-C770063" BorderThickness="1"/>
+
+                    <TextBlock Text="PHONE NO" FontWeight="Bold" FontSize="21" Opacity=".83" Margin="0,15,0,0"/>
+                    <TextBox Name="PhoneBox" Style="{StaticResource TxtBoxStyle}" BorderBrush="#FFc8c8c9" Width="290" Margin="0,10" Background="{x:Null}" BorderThickness="1"/>
+                </StackPanel>
+            </phone:PivotItem>-->
+            <phone:PivotItem x:Name="Pivot2">
+                <phone:PivotItem.Header>
+                    <TextBlock Text="Past Bookings" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0"  x:Name="PastBooking"  Foreground="Black"/>
+                </phone:PivotItem.Header>
+                <ListBox x:Name="PastBookingList" Margin="16,0" ItemTemplate="{StaticResource ListItemTemplate}"/>
+            </phone:PivotItem>
+            <phone:PivotItem Margin="24,28,24,0" x:Name="Pivot1">
+                <phone:PivotItem.Header>
+                    <TextBlock Text="Current Bookings" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0" x:Name="CurrentBooking" Foreground="Black"/>
+                </phone:PivotItem.Header>
+                <ListBox x:Name="CurrentBookingList" SelectionChanged="OnSelectionChanged" Margin="16,0" ItemTemplate="{StaticResource CurrentListItemTemplate}"/>
+            </phone:PivotItem>
+
+        </phone:Pivot>
+    </Grid>
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="#FFffd800">
+            <shell:ApplicationBarIconButton IconUri="Assets/check.png" Click="ApplicationBarIconButton_OnClick" Text="Check"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

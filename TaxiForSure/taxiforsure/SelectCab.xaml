@@ -1,0 +1,168 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TaxiforSure.SelectCab"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:model="clr-namespace:TaxiforSure.Model"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <Grid x:Name="LayoutRoot" Background="#FFffd800v" toolkit:TurnstileFeatherEffect.FeatheringIndex="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="12"/>
+        </Grid.RowDefinitions>
+        <!--Pivot Control-->
+        <Grid.Resources>
+            <model:IntToVisibility x:Key="IntToVisibility"/>
+            <model:NotIntToVisibility x:Key="NotIntToVisibility"/>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="308*"/>
+            <ColumnDefinition Width="173*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="24,18,0,0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="12"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="TaxiForSure" FontSize="16" FontWeight="SemiBold" LineStackingStrategy="BlockLineHeight" LineHeight="16" Foreground="Black" FontFamily="Segoe WP" Margin="0,-1,0,0"/>
+            <TextBlock Text="Select a cab" FontSize="83" FontWeight="Light" Grid.Row="2" LineStackingStrategy="BlockLineHeight" LineHeight="83" FontFamily="Segoe WP" Foreground="Black" Margin="0,-1,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="24,32,24,0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="230"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Image VerticalAlignment="Top" Source="/Assets/Icons/SelectCab.png" HorizontalAlignment="Left"/>
+
+            </StackPanel>
+            <StackPanel x:Name="optionStack" Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Bottom">
+                <TextBlock FontWeight="Bold" Foreground="Black" x:Name="tab1" Text="Option 1"/>
+                <TextBlock x:Name="tab_between" Text="  |  " Foreground="Black"></TextBlock>
+                <TextBlock FontWeight="Bold" x:Name="tab2" Text="Option 2"/>
+            </StackPanel>
+            <Grid Grid.Row="2" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="240"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Border BorderThickness="0" Background="#FFFFFC00">
+                        <TextBlock Text="Car" Margin="8,6,0,6" FontSize="23" LineStackingStrategy="BlockLineHeight" LineHeight="21" Foreground="Black"/>
+                    </Border>
+                    <Border BorderThickness="0" Background="White" Grid.Column="2">
+                        <TextBlock Text="Fares" Margin="8,6,0,6" FontSize="23" LineStackingStrategy="BlockLineHeight" LineHeight="21" Foreground="Black"/>
+                    </Border>
+                    <Border BorderThickness="0" Background="White" Grid.Column="8"/>
+                </Grid>
+                <ScrollViewer Grid.Row="1">
+                    <Grid>
+                        <phone:LongListSelector x:Name="CarListSelector" SelectionChanged="CarListSelector_SelectionChanged" >
+                            <phone:LongListSelector.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Height="55" Margin="0,1,0,0" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="1"/>
+                                            <ColumnDefinition Width="240"/>
+                                            <ColumnDefinition Width="1"/>
+                                            <ColumnDefinition Width="0"/>
+                                            <ColumnDefinition Width="0"/>
+                                            <ColumnDefinition Width="0"/>
+                                            <ColumnDefinition Width="1"/>
+                                            <ColumnDefinition Width="45"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border BorderThickness="0" Background="#FFF4C400">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding CarName}" Margin="8,4,0,0" FontSize="20" LineStackingStrategy="BlockLineHeight" LineHeight="21" Foreground="Black" VerticalAlignment="Center"/>
+                                        </Border>
+                                        <Border BorderThickness="0" Background="#FFE4E4E4" Grid.Column="2">
+                                            <Grid>
+                                                <TextBlock  TextWrapping="Wrap" HorizontalAlignment="Center" Margin="8,4,0,0" FontSize="20" Visibility="{Binding BaseKm, Converter={StaticResource NotIntToVisibility}}" LineStackingStrategy="BlockLineHeight" LineHeight="21" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center">
+                                        <Run Text=" &#x20b9;"/>
+                                        <Run Text="{Binding BaseFare}"/>
+                                        <Run Text=" for "/>
+                                        <Run Text="{Binding BaseKm}"/>
+                                        <Run Text=" km&#x0a;"/>
+                                        <Run Text="&#x20b9;"/>
+                                        <Run Text="{Binding ExtraKmFare}"/>
+                                        <Run Text="per km after that"/>
+                                                </TextBlock>
+                                                <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="8,4,0,0" FontSize="20" Visibility="{Binding BaseKm, Converter={StaticResource IntToVisibility}}" LineStackingStrategy="BlockLineHeight" LineHeight="21" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center">
+                                        <Run Text="&#x20b9;"/>
+                                        <Run Text="{Binding BaseFare}"/>
+                                       <Run Text=" Fixed Fare"/>
+                                                </TextBlock>
+                                            </Grid>
+                                        </Border>
+
+                                        <Border BorderThickness="0" Background="White" Grid.Column="8">
+                                            <RadioButton Margin="-5,-5,0,0" Content="" FontSize="20" BorderBrush="#FF2C0B0B" Style="{StaticResource SelectionRadioBtnStyle}" IsChecked="{Binding IsSelected, Mode=TwoWay}"  GroupName="CabType">
+                                                <RadioButton.RenderTransform>
+                                                    <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                                </RadioButton.RenderTransform>
+                                            </RadioButton>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </phone:LongListSelector.ItemTemplate>
+                        </phone:LongListSelector>
+                    </Grid>
+                </ScrollViewer>
+                <Grid Name="LoadingGrid" Grid.Row="1" Background="Transparent">
+                    <ProgressBar IsIndeterminate="True"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar >
+        <shell:ApplicationBar BackgroundColor="Black" ForegroundColor="#FFffd800" IsVisible="False" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton IconUri="Assets/next.png" Text="Next" Click="Proceed_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileFeatherTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileFeatherTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileFeatherTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileFeatherTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+</phone:PhoneApplicationPage>
