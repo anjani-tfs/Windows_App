@@ -37,7 +37,12 @@ namespace TaxiforSure
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            
+            
             base.OnNavigatedTo(e);
+
+            //TODO::remove below line
+            //List<BookingData> list = (List<BookingData>)Storage.CurrentBookingIds;
 
             if (Storage.CurrentBookingIds!=null && Storage.CurrentBookingIds.Count > 0)
             {

@@ -410,7 +410,7 @@ namespace TaxiforSure
             var et = new EmailComposeTask();
             et.To = "app-feedback@taxiforsure.com";
             et.Subject = "Feedback for TaxiForSure Windows App";
-            et.Body="Device Type : Windows \n\n Device OS : Windows Phone \n\n App Version : 1.0.1.0 \n\n Mobile Number : "+Customer.Number;
+            et.Body="Device Type : Windows \n\n Device OS : Windows Phone \n\n App Version : 1.1.0.0 \n\n Mobile Number : "+Customer.Number;
             et.Show();
         }
 

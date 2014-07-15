@@ -17,10 +17,13 @@ namespace TaxiforSure.Model
         HttpClient client;
         HttpClient client2;
 
+        //TODO::change production url
         // String url = "http://qa.app.rtfs.in";
-         String url = "http://www.radiotaxiforsure.in";
+        String url = "http://app.aws.rtfs.in"; 
+        // String url = "http://www.radiotaxiforsure.in";
         //string url2 = "http://182.18.181.42:9999";
-         string url2 = "http://iospush.taxiforsure.com";
+         string url2 = "http://54.255.57.96:8881";
+         //string url2 = "http://iospush.taxiforsure.com";
 
         public MyClient()
         {
@@ -50,22 +53,27 @@ namespace TaxiforSure.Model
             {
                 try
                 {
-                    var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
+                    //TODO:: change to production url
+                    //var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
+                    
+                    
+                    var response = await new HttpClient().GetStringAsync("http://54.255.57.96:8881/api/consumer-app/config/?appVersion=4.0.0");
+        
                     // + bookingId);
                     JObject data = JObject.Parse(response);
                     if ("success".Equals((string)data["status"]))
                     {
                         var obj = data["response_data"]["AIRPORTS"];
                         //Chennai  
-                        myApp.ChennaiPort = getAirportDetails(obj, "Chennai", 0);
+                        //myApp.ChennaiPort = getAirportDetails(obj, "Chennai", 0);
                         //Bangalore
-                        myApp.BanglorePort = getAirportDetails(obj, "Bangalore", 0);
+                        //myApp.BanglorePort = getAirportDetails(obj, "Bangalore", 0);
                         //Delhi Terminal 1D
                         myApp.Delhi1D = getAirportDetails(obj, "Delhi", 0);
                         //Terminal 3
                         myApp.Delhi3T = getAirportDetails(obj, "Delhi", 1);
 
-                        myApp.HyderabadPort = getAirportDetails(obj, "Hyderabad", 0);
+                        //myApp.HyderabadPort = getAirportDetails(obj, "Hyderabad", 0);
                     }
                 }
                 catch (Exception ex)
@@ -73,24 +81,20 @@ namespace TaxiforSure.Model
                     Debug.WriteLine(ex.Message);
                 }
             }
+            
+
+             
             if (city.ToLower() == "delhi")
             {
                 return IsInRadius(myApp.Delhi1D.Lat, myApp.Delhi1D.Lng, lat2, lng2, myApp.Delhi1D.radius) ||
                        IsInRadius(myApp.Delhi3T.Lat, myApp.Delhi3T.Lng, lat2, lng2, myApp.Delhi3T.radius);
             }
-            else if (city.ToLower() == "chennai")
-            {
-                return IsInRadius(myApp.ChennaiPort.Lat, myApp.ChennaiPort.Lng, lat2, lng2, myApp.ChennaiPort.radius);
-            }
-            else if (city.ToLower() == "hyderabad")
-            {
-                return IsInRadius(myApp.HyderabadPort.Lat, myApp.HyderabadPort.Lng, lat2, lng2, myApp.HyderabadPort.radius);
-           
-            }
-            else
-            {
-                return IsInRadius(myApp.BanglorePort.Lat, myApp.BanglorePort.Lng, lat2, lng2, myApp.BanglorePort.radius);
-            }
+            else{
+
+                 return IsInRadius(Storage.latitudeOfAirportForCity(city), Storage.longitudeOfAirportForCity(city), lat2, lng2, Storage.radiusOfAirportForCity(city));
+
+                }
+                    
 
         }
 
@@ -338,6 +342,12 @@ namespace TaxiforSure.Model
                     if ((App.Current as App).BookingType == "p2p")
                     {
                         cars = GetKmCarDetail(data["response_data"]["p2p"]);
+                        /*added below code so that when it's p2p , airport fares are cleared anjani */ 
+                        myApp.cars_at.Clear();
+                        myApp.cars_at_km.Clear();
+                        myApp.cars_from_at_fixed.Clear();
+                        myApp.cars_from_at_perKM.Clear();
+                        /*   end of bug fix      */
                     }
                     else
                     {

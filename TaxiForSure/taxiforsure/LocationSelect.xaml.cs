@@ -101,6 +101,26 @@ namespace TaxiforSure
 
             try
             {
+
+                locationInfo.City = Storage.City;
+                locationInfo.Location = new GeoCoordinate();
+                try
+                {
+
+                    locationInfo.Location.Latitude = Storage.latitudeOfAirportForCity(Storage.City); // ((App)App.Current).HyderabadPort.Lat;
+                    locationInfo.Location.Longitude = Storage.longitudeOfAirportForCity(Storage.City); // ((App)App.Current).HyderabadPort.Lng;
+                }
+                catch
+                {
+                    locationInfo.Location = new GeoCoordinate(17.240785, 78.42939);
+                }
+            }
+            catch
+            {
+
+            }
+
+                /*
                 if (Storage.City == "Delhi")
                 {
                     locationInfo.City = "Delhi";
@@ -124,8 +144,8 @@ namespace TaxiforSure
                     try
                     {
                         locationInfo.Location = new GeoCoordinate();
-                        locationInfo.Location.Latitude = ((App)App.Current).ChennaiPort.Lat;
-                        locationInfo.Location.Longitude = ((App)App.Current).ChennaiPort.Lng;
+                        locationInfo.Location.Latitude = Storage.latitudeOfAirportForCity(Storage.City); //((App)App.Current).ChennaiPort.Lat;
+                        locationInfo.Location.Longitude = Storage.longitudeOfAirportForCity(Storage.City); //((App)App.Current).ChennaiPort.Lng;
                     }
                     catch
                     {
@@ -166,6 +186,7 @@ namespace TaxiforSure
             catch
             {
             }
+            */
 
 
             try
@@ -176,9 +197,14 @@ namespace TaxiforSure
                     AirportTextBlock.Text = "Airport Terminal 3";
                     DelhiAirBlock.Visibility = Visibility.Visible;
                 }
+                else
+                {
+                    AirportTextBlock.Text = Storage.airportNameForCity(Storage.City);
+                }
+                    /*
                 else if (Storage.City == "Chennai")
                 {
-                    AirportTextBlock.Text = "Chennai Airport";
+                    AirportTextBlock.Text = Storage.airportNameForCity(Storage.City);
 
                 }
                 else if (Storage.City == "Bangalore")
@@ -190,6 +216,7 @@ namespace TaxiforSure
                 {
                     AirportTextBlock.Text = "Rajiv Gandhi International Airport";
                 }
+                    */
             }
             catch
             { }
@@ -362,8 +389,46 @@ namespace TaxiforSure
             LoadinGrid.Visibility = System.Windows.Visibility.Visible;
             
             var l = new LocationInfo();
-            
 
+            if (Storage.City == "Delhi")
+            {
+                l.Name = l.Area = l.Landmark = "Airport Terminal 3";
+                l.City = "Delhi";
+                try
+                {
+                    l.Location = new GeoCoordinate();
+                    l.Location.Latitude = ((App)App.Current).Delhi3T.Lat;
+                    l.Location.Longitude = ((App)App.Current).Delhi3T.Lng;
+                }
+                catch
+                {
+                    l.Location = new GeoCoordinate();
+                    l.Location.Latitude = 28.55754;
+                    l.Location.Longitude = 77.08814;
+
+                }
+            }
+            else
+            {
+
+                l.Name = l.Area = l.Landmark = Storage.airportNameForCity(Storage.City);
+                l.City = Storage.City;
+                try
+                {
+                    l.Location = new GeoCoordinate();
+                    l.Location.Latitude = Storage.latitudeOfAirportForCity(Storage.City);
+                    l.Location.Longitude = Storage.longitudeOfAirportForCity(Storage.City); //((App)App.Current).Delhi3T.Lng;
+                }
+                catch
+                {
+                    l.Location = new GeoCoordinate();
+                    l.Location.Latitude = 28.55754;
+                    l.Location.Longitude = 77.08814;
+
+                }
+            }
+
+            /*
                 if (Storage.City == "Delhi")
                 {
                     l.Name = l.Area = l.Landmark = "Airport Terminal 3";
@@ -436,6 +501,7 @@ namespace TaxiforSure
 
 
                 }
+             * */
 
                 if (isTargetDestination)
                 {

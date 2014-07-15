@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using TaxiforSure.Model;
 using TaxiforSure.Resources;
 using Windows.Devices.Geolocation;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TaxiforSure
 {
@@ -48,6 +50,7 @@ namespace TaxiforSure
         public bool IsRadiusInfoAvailable = false;
         public Airport ChennaiPort, BanglorePort, Delhi1D, Delhi3T,HyderabadPort;
         public bool GPSOnlyOnce; // this is the only correct variable used
+        public List<string> cityList;
         /// <summary>
         /// Constructor for the Application object.
         /// </summary>
@@ -147,11 +150,38 @@ namespace TaxiforSure
 
         async void fillAirport()
         {
-            var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
+            
+            //TODO::change to production url
+            //var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
+            var response = await new HttpClient().GetStringAsync("http://54.255.57.96:8881/api/consumer-app/config/?appVersion=4.0.0");
+        
+            
             // + bookingId);
             JObject data = JObject.Parse(response);
+
+            
             if ("success".Equals((string)data["status"]))
             {
+
+                
+                var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(response);
+                Dictionary<string,object> dict = (Dictionary<string,object>)values;
+
+                string responseData = (string)dict["response_data"].ToString();
+                Dictionary<string, object> responseDataDict = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseData);
+
+                string centerString = (string)responseDataDict["CENTER"].ToString();
+                Dictionary<string, object> centerDict = JsonConvert.DeserializeObject<Dictionary<string, object>>(centerString);
+                List<string> cityList = new List<string>(centerDict.Keys);
+                Storage.cityList = cityList;
+
+                string airportDictionaryString = (string)responseDataDict["AIRPORTS"].ToString();
+                Dictionary<string, List<Dictionary<string, string>>> airportDictionaryDict = JsonConvert.DeserializeObject<Dictionary<string, List<Dictionary<string, string>>>>(airportDictionaryString);
+                //Dictionary<object,object> list = JsonConvert.DeserializeObject<Dictionary<object,object>>(airportDictionaryString); 
+                Storage.airportDictionary = airportDictionaryDict;
+               
+
+                /*
                 App myApp = (App)App.Current;
                 myApp.Delhi1D.Lat = double.Parse((string)data["response_data"]["AIRPORTS"]["Delhi"][0]["latitude"]);
                 myApp.Delhi1D.Lng = double.Parse((string)data["response_data"]["AIRPORTS"]["Delhi"][0]["longitude"]);
@@ -163,6 +193,13 @@ namespace TaxiforSure
                 myApp.BanglorePort.Lng = double.Parse((string)data["response_data"]["AIRPORTS"]["Bangalore"]["longitude"]);
                 myApp.HyderabadPort.Lat = double.Parse((string)data["response_data"]["AIRPORTS"]["Hyderabad"]["latitude"]);
                 myApp.HyderabadPort.Lng = double.Parse((string)data["response_data"]["AIRPORTS"]["Hyderabad"]["longitude"]);
+                */
+                //Dictionary<string,string> cityCentreDictionary = double.Parse((Dictionary<string,string>)data["response_data"]["CENTER"]);
+                //string center = data["response_data"]["CENTER"];
+                //string center = (string)data["response_data"]["CENTER"];
+                //Dictionary<string,string> deserializedProduct = JsonConvert.DeserializeObject<Dictionary<string,string>>(center);
+
+
 
             }
             
@@ -170,18 +207,20 @@ namespace TaxiforSure
 
         }
 
-
         // Code to execute when the application is launching (eg, from Start)
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+
+            fillAirport();
+
         }
 
         // Code to execute when the application is activated (brought to foreground)
         // This code will not execute when the application is first launched
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
-
+           
             // Ensure that application state is restored appropriately
             if (e.IsApplicationInstancePreserved)
             {
@@ -199,6 +238,7 @@ namespace TaxiforSure
         // This code will not execute when the application is closing
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
+            
             //    if (!string.IsNullOrEmpty(ApplicationDataObject))
             {
                 // Store it in the State dictionary.

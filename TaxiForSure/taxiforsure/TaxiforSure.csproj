@@ -124,6 +124,7 @@
     <Compile Include="Model\ErrorMessage.cs" />
     <Compile Include="Model\IntToInvisibility.cs" />
     <Compile Include="Model\intToVisibility.cs" />
+    <Compile Include="Model\List.cs" />
     <Compile Include="Model\LocationInfo.cs" />
     <Compile Include="Model\MyClient.cs" />
     <Compile Include="Model\Query.cs" />
