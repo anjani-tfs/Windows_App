@@ -18,11 +18,22 @@ namespace TaxiforSure
         {
             InitializeComponent();
 
-            NameBox.Text = Customer.Name;
-            EmailBox.Text = Customer.Email;
-            if (Customer.Number != 0)
-                PhoneBox.Text = Customer.Number.ToString();
+            
             isTaxiBooking = false;
+
+            if (Storage.IsLogin)
+            {
+                PhoneBox.Text = SignInCustomer.Number.ToString();
+                NameBox.Text = SignInCustomer.Name;
+                EmailBox.Text = SignInCustomer.Email;
+            }
+            else
+            {
+                NameBox.Text = Customer.Name;
+                EmailBox.Text = Customer.Email;
+                if (Customer.Number != 0)
+                    PhoneBox.Text = Customer.Number.ToString();
+            }
         }
 
      
@@ -33,21 +44,43 @@ namespace TaxiforSure
                 MessageBox.Show("Please enter a valid phone number.", "TaxiForSure", MessageBoxButton.OK);
                 return;
             }
-            if (String.IsNullOrWhiteSpace(NameBox.Text))
+            if (Storage.IsLogin)
             {
-                Customer.Name = "Guest";
+                if (String.IsNullOrWhiteSpace(NameBox.Text))
+                {
+                    SignInCustomer.Name = "Guest";
+                }
+                else
+                {
+                    SignInCustomer.Name = NameBox.Text;
+                }
+                if (String.IsNullOrWhiteSpace(EmailBox.Text))
+                {
+                    SignInCustomer.Email = "no.email@example.com";
+                }
+                else
+                {
+                    SignInCustomer.Email = EmailBox.Text.ToLower();
+                }
             }
             else
             {
-                Customer.Name = NameBox.Text;
-            }
-            if (String.IsNullOrWhiteSpace(EmailBox.Text))
-            {
-                Customer.Email = "no.email@example.com";
-            }
-            else
-            {
-                Customer.Email = EmailBox.Text.ToLower();
+                if (String.IsNullOrWhiteSpace(NameBox.Text))
+                {
+                    Customer.Name = "Guest";
+                }
+                else
+                {
+                    Customer.Name = NameBox.Text;
+                }
+                if (String.IsNullOrWhiteSpace(EmailBox.Text))
+                {
+                    Customer.Email = "no.email@example.com";
+                }
+                else
+                {
+                    Customer.Email = EmailBox.Text.ToLower();
+                }
             }
 
 
@@ -68,12 +101,26 @@ namespace TaxiforSure
             //Validate
             Query.CouponCode = CouponBox.Text;
 
-            Customer.Email = EmailBox.Text;
+            if (Storage.IsLogin)
+            {
+                SignInCustomer.Email = EmailBox.Text;
+            }
+            else
+            {
+                Customer.Email = EmailBox.Text;
+            }
             try
             {
                 App myApp = (App)App.Current;
 
-                Customer.Number = long.Parse(PhoneBox.Text);
+                if (Storage.IsLogin)
+                {
+                    SignInCustomer.Number = long.Parse(PhoneBox.Text);
+                }
+                else
+                {
+                    Customer.Number = long.Parse(PhoneBox.Text);
+                }
                 LoadinGrid.Visibility = Visibility.Visible;
                 if (Query.PickNow == true)
                 {

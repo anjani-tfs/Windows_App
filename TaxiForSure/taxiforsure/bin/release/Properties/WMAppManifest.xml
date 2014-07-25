@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{6f3cdf91-863e-4ec5-a919-104848b7fb92}" Title="TaxiForSure" RuntimeType="Silverlight" Version="1.0.1.0" Genre="apps.normal" Author="TaxiforSure author" Description="Sample description" Publisher="TaxiforSure" PublisherID="{c8ef35c4-dbcc-4b3c-be8a-af33be92e1a0}">
+  <App xmlns="" ProductID="{6f3cdf91-863e-4ec5-a919-104848b7fb92}" Title="TaxiForSure" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="TaxiforSure author" Description="Sample description" Publisher="TaxiforSure" PublisherID="{c8ef35c4-dbcc-4b3c-be8a-af33be92e1a0}">
     <IconPath IsRelative="true" IsResource="false">Assets\AppIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

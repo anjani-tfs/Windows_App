@@ -17,30 +17,59 @@ namespace TaxiforSure
         }
 
         private BookingData bookingData;
+        private CurrentPastBookingDetails signinbookingData;
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            bookingData = (App.Current as App).CancelBookingData;
-            FromBlock.Text = bookingData.From;
-            ToBlock.Text = bookingData.To;
-            TimeBlock.Text = bookingData.Time;
-            CarBlock.Text = bookingData.CarName;
-            try
+            if (Storage.IsLogin)
             {
-                string[] bookingFair = bookingData.Fare.Split(',');
-                if (bookingFair.Length == 2)
+                signinbookingData = (App.Current as App).SignInCancelBookingData;
+                FromBlock.Text = signinbookingData.From;
+                ToBlock.Text = signinbookingData.To;
+                TimeBlock.Text = signinbookingData.Time+" "+signinbookingData.pickup_time;
+               // CarBlock.Text = signinbookingData.CarName;
+                try
                 {
-                    CarFare.Text = bookingFair[0].ToString();
-                    CarExtraFare.Text = bookingFair[1].ToString().Trim();
+                    string[] bookingFair = signinbookingData.Fare.Split(',');
+                    if (bookingFair.Length == 2)
+                    {
+                        CarFare.Text = bookingFair[0].ToString();
+                        CarExtraFare.Text = bookingFair[1].ToString().Trim();
+                    }
+                    else
+                    {
+                        CarFare.Text = bookingFair[0].ToString();
+                        CarExtraFare.Text = string.Empty;
+                    }
                 }
-                else
+                catch
                 {
-                    CarFare.Text = bookingFair[0].ToString();
-                    CarExtraFare.Text = string.Empty;
                 }
             }
-            catch
+            else
             {
+                bookingData = (App.Current as App).CancelBookingData;
+                FromBlock.Text = bookingData.From;
+                ToBlock.Text = bookingData.To;
+                TimeBlock.Text = bookingData.Time;
+                CarBlock.Text = bookingData.CarName;
+                try
+                {
+                    string[] bookingFair = bookingData.Fare.Split(',');
+                    if (bookingFair.Length == 2)
+                    {
+                        CarFare.Text = bookingFair[0].ToString();
+                        CarExtraFare.Text = bookingFair[1].ToString().Trim();
+                    }
+                    else
+                    {
+                        CarFare.Text = bookingFair[0].ToString();
+                        CarExtraFare.Text = string.Empty;
+                    }
+                }
+                catch
+                {
+                }
             }
         }
 
@@ -63,16 +92,30 @@ namespace TaxiforSure
             {
 
                 //insert condition here
-                
-
-                var result = await client.CancelBooking(bookingData.BookingId, reason);
-                if (result)
+                if (Storage.IsLogin)
                 {
-                    MessageBox.Show("Booking Cancelled.", "TaxiForSure", MessageBoxButton.OK);
-                    //Storage.CurrentBookingIds.Remove(bookingData);
-                    //if (Storage.PastBookingIds == null) Storage.PastBookingIds = new List<BookingData>();
-                    //Storage.PastBookingIds.Insert(0, bookingData);
-                    NavigationService.GoBack();
+                    var result = await client.SignInCancelBooking(signinbookingData.BookingId, reason);
+                    if (result)
+                    {
+                        MessageBox.Show("Booking Cancelled.", "TaxiForSure", MessageBoxButton.OK);
+                        //Storage.CurrentBookingIds.Remove(bookingData);
+                        //if (Storage.PastBookingIds == null) Storage.PastBookingIds = new List<BookingData>();
+                        //Storage.PastBookingIds.Insert(0, bookingData);
+                        NavigationService.GoBack();
+                    }
+                }
+                else
+                {
+
+                    var result = await client.CancelBooking(bookingData.BookingId, reason);
+                    if (result)
+                    {
+                        MessageBox.Show("Booking Cancelled.", "TaxiForSure", MessageBoxButton.OK);
+                        //Storage.CurrentBookingIds.Remove(bookingData);
+                        //if (Storage.PastBookingIds == null) Storage.PastBookingIds = new List<BookingData>();
+                        //Storage.PastBookingIds.Insert(0, bookingData);
+                        NavigationService.GoBack();
+                    }
                 }
             }
             catch (Exception ex)

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,13 +18,10 @@ namespace TaxiforSure.Model
         HttpClient client;
         HttpClient client2;
 
-        //TODO::change production url
         // String url = "http://qa.app.rtfs.in";
-        String url = "http://app.aws.rtfs.in"; 
-        // String url = "http://www.radiotaxiforsure.in";
+         String url = "http://www.radiotaxiforsure.in";
         //string url2 = "http://182.18.181.42:9999";
-         string url2 = "http://54.255.57.96:8881";
-         //string url2 = "http://iospush.taxiforsure.com";
+         string url2 = "http://iospush.taxiforsure.com";
 
         public MyClient()
         {
@@ -53,27 +51,20 @@ namespace TaxiforSure.Model
             {
                 try
                 {
-                    //TODO:: change to production url
-                    //var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
-                    
-                    
-                    var response = await new HttpClient().GetStringAsync("http://54.255.57.96:8881/api/consumer-app/config/?appVersion=4.0.0");
-        
+                    var response = await new HttpClient().GetStringAsync(" http://iospush.taxiforsure.com/api/consumer-app/config/?appVersion=4.0.0");
                     // + bookingId);
                     JObject data = JObject.Parse(response);
                     if ("success".Equals((string)data["status"]))
                     {
                         var obj = data["response_data"]["AIRPORTS"];
                         //Chennai  
-                        //myApp.ChennaiPort = getAirportDetails(obj, "Chennai", 0);
+                        myApp.ChennaiPort = getAirportDetails(obj, "Chennai", 0);
                         //Bangalore
-                        //myApp.BanglorePort = getAirportDetails(obj, "Bangalore", 0);
+                        myApp.BanglorePort = getAirportDetails(obj, "Bangalore", 0);
                         //Delhi Terminal 1D
                         myApp.Delhi1D = getAirportDetails(obj, "Delhi", 0);
                         //Terminal 3
                         myApp.Delhi3T = getAirportDetails(obj, "Delhi", 1);
-
-                        //myApp.HyderabadPort = getAirportDetails(obj, "Hyderabad", 0);
                     }
                 }
                 catch (Exception ex)
@@ -81,20 +72,19 @@ namespace TaxiforSure.Model
                     Debug.WriteLine(ex.Message);
                 }
             }
-            
-
-             
             if (city.ToLower() == "delhi")
             {
                 return IsInRadius(myApp.Delhi1D.Lat, myApp.Delhi1D.Lng, lat2, lng2, myApp.Delhi1D.radius) ||
                        IsInRadius(myApp.Delhi3T.Lat, myApp.Delhi3T.Lng, lat2, lng2, myApp.Delhi3T.radius);
             }
-            else{
-
-                 return IsInRadius(Storage.latitudeOfAirportForCity(city), Storage.longitudeOfAirportForCity(city), lat2, lng2, Storage.radiusOfAirportForCity(city));
-
-                }
-                    
+            else if (city.ToLower() == "chennai")
+            {
+                return IsInRadius(myApp.ChennaiPort.Lat, myApp.ChennaiPort.Lng, lat2, lng2, myApp.ChennaiPort.radius);
+            }
+            else
+            {
+                return IsInRadius(myApp.BanglorePort.Lat, myApp.BanglorePort.Lng, lat2, lng2, myApp.BanglorePort.radius);
+            }
 
         }
 
@@ -226,6 +216,64 @@ namespace TaxiforSure.Model
                 return null;
             }
         }
+
+
+        public async Task<List<CurrentPastBookingDetails>> SignInBookingStatus(List<CurrentPastBookingDetails> ids)
+        {
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+            foreach (var id in ids)
+            {
+                postData.Add(new KeyValuePair<string, string>("bookings_list", id.BookingId));
+            }
+            postData.Add(new KeyValuePair<string, string>("source", "windows"));
+            postData.Add(new KeyValuePair<string, string>("appVersion", "3.0.1"));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("/api/get-bookings-status/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+                        var resp = new List<CurrentPastBookingDetails>();
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            foreach (var id in ids)
+                            {
+                                String result = data["response_data"][id.BookingId].ToString().ToLower();
+                                if (result.Equals("canceled") || result.Equals("completed"))
+                                {
+                                    if (result.Equals("canceled"))
+                                    {
+                                        result = "Canceled";
+                                    }
+                                    else
+                                    {
+                                        result = "Completed";
+                                    }
+
+                                    id.BookingStatus = result;
+                                    resp.Add(id);
+                                }
+                            }
+                        }
+                        return resp;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         public async Task<bool> CancelBooking(String id, String reason)
         {
             //API: /api/get-bookings-status/
@@ -241,6 +289,41 @@ namespace TaxiforSure.Model
                 using (var content = new FormUrlEncodedContent(postData))
                 {
                     var response = await client.PostAsync("/api/customer/cancel-taxi/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+                        var resp = new List<BookingData>();
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            //    String result = data["response_data"]["status"].ToString();
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> SignInCancelBooking(String id, String reason)
+        {
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+            postData.Add(new KeyValuePair<string, string>("booking_id", id));
+            postData.Add(new KeyValuePair<string, string>("cancellation_reason", reason));
+            postData.Add(new KeyValuePair<string, string>("user_id ", SignInCustomer.UserId));
+            postData.Add(new KeyValuePair<string, string>("appVersion", "5.2"));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://qa6.aws.rtfs.in/api/customer/cancel-taxi/", content);
                     if (response.IsSuccessStatusCode)
                     {
                         String a = await response.Content.ReadAsStringAsync();
@@ -342,12 +425,6 @@ namespace TaxiforSure.Model
                     if ((App.Current as App).BookingType == "p2p")
                     {
                         cars = GetKmCarDetail(data["response_data"]["p2p"]);
-                        /*added below code so that when it's p2p , airport fares are cleared anjani */ 
-                        myApp.cars_at.Clear();
-                        myApp.cars_at_km.Clear();
-                        myApp.cars_from_at_fixed.Clear();
-                        myApp.cars_from_at_perKM.Clear();
-                        /*   end of bug fix      */
                     }
                     else
                     {
@@ -637,11 +714,25 @@ namespace TaxiforSure.Model
                 BookingStatus status;
                 if (Query.PickNow)
                 {
-                    status = await PickNow();
+                    if (Storage.IsLogin)
+                    {
+                        status = await BookNowSignInUser(SignInCustomer.UserId);
+                    }
+                    else
+                    {
+                        status = await PickNow();
+                    }
                 }
                 else
                 {
-                    status = await PickLater();
+                    if (Storage.IsLogin)
+                    {
+                        status = await BookLaterSignInUser(SignInCustomer.UserId);
+                    }
+                    else
+                    {
+                        status = await PickLater();
+                    }                   
                 }
                 if (status == null || status.IsWaiting)
                 {
@@ -951,6 +1042,589 @@ namespace TaxiforSure.Model
             {
                 Debug.WriteLine(ex.Message);
                 return null;
+            }
+        }
+
+        public async Task<LoginDetails> Login(string username, string password,string appversion)
+        {
+            var resp = new LoginDetails();
+
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+            postData.Add(new KeyValuePair<string, string>("username", username));
+            postData.Add(new KeyValuePair<string, string>("password", password));
+            postData.Add(new KeyValuePair<string, string>("appversion", appversion));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://apistaging.aws.rtfs.in/user/login/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+                        
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            var obj = data["response_data"];
+                            resp.UserId = (String)obj["user_id"];
+                            SignInCustomer.UserId = (String)obj["user_id"];
+                            SignInCustomer.Name = (String)obj["customer_name"];
+                            SignInCustomer.Email = (String)obj["customer_email"];
+                            SignInCustomer.Number = (long)obj["customer_number"];
+                            resp.Name = (String)obj["customer_name"];
+                            resp.Number = (String)obj["customer_number"];
+                            resp.Referral_Code = (String)obj["referral_code"];
+                            resp.Referral_Url = (String)obj["referral_url"];
+                            resp.Email = (String)obj["customer_email"];
+                            resp.Username = username;
+                            resp.Password = password;
+                            return resp;
+                        }
+                    }
+                    resp = null;
+                    return resp;
+                }
+            }
+            catch (Exception ex)
+            {
+                resp = null;
+                return resp;
+            }
+        }
+
+        public async Task<bool> RetryCurrentPastBookings(string customerNumber, string userid, string appversion)
+        {
+            var resp = new List<CurrentPastBookingDetails>();
+            var resp1 = new List<CurrentPastBookingDetails>();
+            try
+            {
+                
+                //TFS-AT-C831075
+                var response = await client.GetStringAsync("http://qa6.aws.rtfs.in/api/consumer-app/all-bookings/?customer_number=" + customerNumber + "&user_id=" + userid + "&appVersion=" + appversion);
+                // + bookingId);
+                JObject data = JObject.Parse(response);
+                if ("success".Equals((string)data["status"]))
+                {
+                    var obj = data["response_data"];
+
+                    foreach (var result in data["response_data"]["past_bookings"])
+                    {
+                        resp.Add(new CurrentPastBookingDetails
+                        {
+                            BookingId = (String)result["booking_id"],
+                            BookingStatus = (String)result["service_status"],
+                            booking_type = (String)result["booking_type"],
+                            To = (String)result["drop_address"],
+                            drop_area = (String)result["drop_area"],
+                            Fare= (String)result["fare"],
+                            has_feedback = (String)result["has_feedback"],
+                            is_outstation = (String)result["is_outstation"],
+                            From = (String)result["pickup_address"],
+                            pickup_area = (String)result["pickup_area"],
+                            pickup_city = (String)result["pickup_city"],
+                            Time = (String)result["pickup_date"],
+                            pickup_latlong = (String)result["pickup_latlong"],
+                            pickup_time = (String)result["pickup_time"],
+                            service_status = (String)result["service_status"]
+                        });
+                    }
+
+                    Storage.SignInPastBookingIds = resp;
+
+                    foreach (var result in data["response_data"]["pending_bookings"])
+                    {
+                        resp1.Add(new CurrentPastBookingDetails
+                        {
+                            BookingId = (String)result["booking_id"],
+                            BookingStatus = (String)result["service_status"],
+                            booking_type = (String)result["booking_type"],
+                            To = (String)result["drop_address"],
+                            drop_area = (String)result["drop_area"],
+                            Fare = (String)result["fare"],
+                            has_feedback = (String)result["has_feedback"],
+                            is_outstation = (String)result["is_outstation"],
+                            From = (String)result["pickup_address"],
+                            pickup_area = (String)result["pickup_area"],
+                            pickup_city = (String)result["pickup_city"],
+                            Time = (String)result["pickup_date"],
+                            pickup_latlong = (String)result["pickup_latlong"],
+                            pickup_time = (String)result["pickup_time"],
+                            service_status = (String)result["service_status"]
+                        });
+                        
+                    }
+                    Storage.SignInCurrentBookingIds = resp1;
+                }
+                if (resp.Count > 0 || resp1.Count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public async Task<string> GetTripReceipt(string BookingId, string Email, string appversion)
+        {
+            var resp = new EmailConfirmation();
+            try
+            {
+
+                //TFS-AT-C831075
+                //var response = await client.GetStringAsync("http://qa6.aws.rtfs.in/api/consumer-app/email-receipt/?booking_id=" + BookingId + "&email=" + Email + "&appVersion=" + appversion);
+                var response = await client.GetStringAsync("http://www.radiotaxiforsure.in/api/consumer-app/email-receipt/?booking_id=" + BookingId + "&email=" + Email + "&appVersion=" + appversion);
+                
+                // + bookingId);
+                JObject data = JObject.Parse(response);
+                string Message = string.Empty ;
+                if ("success".Equals((string)data["status"]))
+                {
+                    var obj = data["response_data"];
+                    resp.Message = (string)obj["message"];
+                    Message = (string)obj["message"];
+                }
+                else
+                {
+                    var obj = data["response_data"];
+                    resp.Message = (string)obj["message"];
+                    Message = (string)obj["message"];
+                }
+
+                return Message;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return resp.Message;
+            }
+        }
+
+        public async Task<FavouriteConfirmation> AddFavourites(string UserId, List<FavouriteDetails> FavDeatails, string appversion)
+        {
+            var resp = new FavouriteConfirmation();
+            try
+            {
+                string favDet = JsonConvert.SerializeObject(FavDeatails);
+
+                var postData = new List<KeyValuePair<string, string>>();
+
+                postData.Add(new KeyValuePair<string, string>("user_id", UserId));
+                postData.Add(new KeyValuePair<string, string>("favs", favDet));
+                postData.Add(new KeyValuePair<string, string>("appversion", appversion));
+
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://apistaging.aws.rtfs.in/featured-list/add/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            var obj = data["response_data"];
+
+                            resp.Message = (string)obj["message"];
+                            resp.Status = true;
+                            return resp;
+                        }
+                        else
+                        {
+                            var obj = data["error_desc"];
+                            resp.Message = (string)obj["message"];
+                            resp.Status = false;
+                            return resp;
+                        }
+                    }
+
+                    resp.Message = "Failed";
+                    resp.Status = false;
+                    return resp;
+                }
+            }
+            catch (Exception ex)
+            {
+                resp.Message = "Failed";
+                resp.Status = false;
+                return resp;
+            }
+        }
+
+        public async Task<bool> ConfigAPI(string CustomerNumber, string UserId, string appversion,string OsVersion)
+        {
+            var resp = new EmailConfirmation();
+            try
+            {
+
+                //TFS-AT-C831075
+                var response = await client.GetStringAsync("http://54.255.57.96:8881/api/consumer-app/config/?customer_number="+CustomerNumber+"&user_id="+UserId+"&appVersion=2.8.4&osVersion=6.1");
+                // + bookingId);
+                JObject data = JObject.Parse(response);
+                if ("success".Equals((string)data["status"]))
+                {
+                    var obj = data["response_data"];
+                    resp.Message = (string)obj["Message"];
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public async Task<BookingStatus> BookNowSignInUser(string user_id)
+        {
+            var status = new BookingStatus();
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+
+            if (string.IsNullOrWhiteSpace(SignInCustomer.Name))
+                postData.Add(new KeyValuePair<string, string>("customer_name", "Guest"));
+            else
+                postData.Add(new KeyValuePair<string, string>("customer_name", SignInCustomer.Name));
+
+            postData.Add(new KeyValuePair<string, string>("customer_number", SignInCustomer.Number.ToString()));
+            postData.Add(new KeyValuePair<string, string>("user_id", user_id));
+
+            if (string.IsNullOrWhiteSpace(SignInCustomer.Email))
+            {
+                postData.Add(new KeyValuePair<string, string>("customer_email", "no.email@example.com"));
+            }
+            else
+                postData.Add(new KeyValuePair<string, string>("customer_email", SignInCustomer.Email));
+
+            postData.Add(new KeyValuePair<string, string>("coupon_code", Query.CouponCode + ""));
+            postData.Add(new KeyValuePair<string, string>("pickup_address", Query.Pickup.Name));
+            postData.Add(new KeyValuePair<string, string>("pickup_area", Query.Pickup.Area));
+            postData.Add(new KeyValuePair<string, string>("city", Query.Pickup.City));
+            postData.Add(new KeyValuePair<string, string>("landmark", Query.Pickup.Landmark + ""));
+            postData.Add(new KeyValuePair<string, string>("pickup_latitude", Math.Round(Query.Pickup.Location.Latitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("pickup_longitude", Math.Round(Query.Pickup.Location.Longitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("drop_address", Query.Drop.Name));
+            postData.Add(new KeyValuePair<string, string>("drop_area", Query.Drop.Area));
+            postData.Add(new KeyValuePair<string, string>("drop_latitude", Math.Round(Query.Drop.Location.Latitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("drop_longitude", Math.Round(Query.Drop.Location.Longitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("car_type", Query.Car.CarType));
+            postData.Add(new KeyValuePair<string, string>("extra_km_fare", Query.Car.ExtraKmFare.ToString()));
+            if ((App.Current as App).BookingType == "p2p")
+            {
+                postData.Add(new KeyValuePair<string, string>("base_fare", Query.Car.BaseFare.ToString()));
+                postData.Add(new KeyValuePair<string, string>("fare", "0"));
+                postData.Add(new KeyValuePair<string, string>("fare_type", "2"));
+            }
+            else
+            {
+                //if extrakm is 0 then its fixed fare
+                if (Query.Car.ExtraKmFare < 0.5)
+                {
+                    postData.Add(new KeyValuePair<string, string>("base_fare", "0"));
+                    postData.Add(new KeyValuePair<string, string>("fare", Query.Car.BaseFare.ToString()));
+                    postData.Add(new KeyValuePair<string, string>("fare_type", "1"));
+                }
+                //else its airport and km
+                else
+                {
+                    postData.Add(new KeyValuePair<string, string>("fare", "0"));
+                    postData.Add(new KeyValuePair<string, string>("base_fare", Query.Car.BaseFare.ToString()));
+                    postData.Add(new KeyValuePair<string, string>("fare_type", "2"));
+                }
+            }
+            postData.Add(new KeyValuePair<string, string>("base_km", Query.Car.BaseKm.ToString()));
+
+            if (!Query.PickNow)
+            {
+                //date in format 21/12/2013
+                //time in format 21:15
+                string dateInForm = Query.PickupTime.ToString("dd/mm/yyyy");
+
+                //postData.Add(new KeyValuePair<string, string>("pickup_date", dateInForm));
+
+                postData.Add(new KeyValuePair<string, string>("pickup_time", Query.PickupTime.ToString("HH:mm")));
+            }
+            if (((App)App.Current).IsSourceAirport || ((App)App.Current).IsTargetAirport)
+            {
+                if (Query.Pickup.City == "Bangalore")
+                    postData.Add(new KeyValuePair<string, string>("booking_type", "at"));
+                else
+                    postData.Add(new KeyValuePair<string, string>("booking_type", "at-km"));
+
+                if (((App)App.Current).IsSourceAirport)
+                    postData.Add(new KeyValuePair<string, string>("direction", "from"));
+                else
+                    postData.Add(new KeyValuePair<string, string>("direction", "to"));
+
+            }
+            else
+            {
+                postData.Add(new KeyValuePair<string, string>("booking_type", "p2p"));
+            }
+
+            postData.Add(new KeyValuePair<string, string>("appVersion", "5.2"));
+            postData.Add(new KeyValuePair<string, string>("source", "windows"));
+
+            //postData.Add(new KeyValuePair<string, string>("customer_name", customer_name));
+            //postData.Add(new KeyValuePair<string, string>("customer_number", customer_number));
+            //postData.Add(new KeyValuePair<string, string>("user_id", user_id));
+            //postData.Add(new KeyValuePair<string, string>("pickup_address", pickup_address));
+            //postData.Add(new KeyValuePair<string, string>("pickup_area", pickup_area));
+            //postData.Add(new KeyValuePair<string, string>("landmark", landmark));
+            //postData.Add(new KeyValuePair<string, string>("pickup_latitude", pickup_latitude));
+            //postData.Add(new KeyValuePair<string, string>("pickup_longitude", pickup_longitude));
+            //postData.Add(new KeyValuePair<string, string>("booking_type", booking_type));
+            //postData.Add(new KeyValuePair<string, string>("fare_type", fare_type));
+            //postData.Add(new KeyValuePair<string, string>("car_type", car_type));
+            //postData.Add(new KeyValuePair<string, string>("extra_km_fare", extra_km_fare));
+            //postData.Add(new KeyValuePair<string, string>("base_km", base_km));
+            //postData.Add(new KeyValuePair<string, string>("base_fare", base_fare));
+            //postData.Add(new KeyValuePair<string, string>("fare", fare));
+            //postData.Add(new KeyValuePair<string, string>("customer_email", customer_email));
+            //postData.Add(new KeyValuePair<string, string>("city", city));
+            //postData.Add(new KeyValuePair<string, string>("drop_latitude", drop_latitude));
+            //postData.Add(new KeyValuePair<string, string>("drop_longitude", drop_longitude));
+            //postData.Add(new KeyValuePair<string, string>("drop_area", drop_area));
+            //postData.Add(new KeyValuePair<string, string>("direction", direction));
+            //postData.Add(new KeyValuePair<string, string>("coupon_code", coupon_code));
+            //postData.Add(new KeyValuePair<string, string>("source", source));
+            //postData.Add(new KeyValuePair<string, string>("booking_id", booking_id));
+            //postData.Add(new KeyValuePair<string, string>("appVersion", appVersion));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://qa6.aws.rtfs.in/api/consumer-app/book-now/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            var obj = data["response_data"];
+                            status.BookingId = (String)data["response_data"]["booking_id"];
+                            status.Message = (String)data["response_data"]["status_message"];
+                            status.IsConfirmed = (bool)data["response_data"]["booking_confirmed"];
+                            status.IsWaiting = (bool)data["response_data"]["wait"];
+                            return status;
+                        }
+                    }
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<BookingStatus> BookLaterSignInUser(string user_id)
+        {
+            var status = new BookingStatus();
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+
+            if (string.IsNullOrWhiteSpace(SignInCustomer.Name))
+                postData.Add(new KeyValuePair<string, string>("customer_name", "Guest"));
+            else
+                postData.Add(new KeyValuePair<string, string>("customer_name", SignInCustomer.Name));
+
+            postData.Add(new KeyValuePair<string, string>("customer_number", SignInCustomer.Number.ToString()));
+            postData.Add(new KeyValuePair<string, string>("user_id", user_id));
+
+            if (string.IsNullOrWhiteSpace(SignInCustomer.Email))
+            {
+                postData.Add(new KeyValuePair<string, string>("customer_email", "no.email@example.com"));
+            }
+            else
+                postData.Add(new KeyValuePair<string, string>("customer_email", SignInCustomer.Email));
+
+            postData.Add(new KeyValuePair<string, string>("coupon_code", Query.CouponCode + ""));
+            postData.Add(new KeyValuePair<string, string>("pickup_address", Query.Pickup.Name));
+            postData.Add(new KeyValuePair<string, string>("pickup_area", Query.Pickup.Area));
+            postData.Add(new KeyValuePair<string, string>("city", Query.Pickup.City));
+            postData.Add(new KeyValuePair<string, string>("landmark", Query.Pickup.Landmark + ""));
+            postData.Add(new KeyValuePair<string, string>("pickup_latitude", Math.Round(Query.Pickup.Location.Latitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("pickup_longitude", Math.Round(Query.Pickup.Location.Longitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("drop_address", Query.Drop.Name));
+            postData.Add(new KeyValuePair<string, string>("drop_area", Query.Drop.Area));
+            postData.Add(new KeyValuePair<string, string>("drop_latitude", Math.Round(Query.Drop.Location.Latitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("drop_longitude", Math.Round(Query.Drop.Location.Longitude, 5).ToString()));
+            postData.Add(new KeyValuePair<string, string>("car_type", Query.Car.CarType));
+            postData.Add(new KeyValuePair<string, string>("extra_km_fare", Query.Car.ExtraKmFare.ToString()));
+            if ((App.Current as App).BookingType == "p2p")
+            {
+                postData.Add(new KeyValuePair<string, string>("base_fare", Query.Car.BaseFare.ToString()));
+                postData.Add(new KeyValuePair<string, string>("fare", "0"));
+                postData.Add(new KeyValuePair<string, string>("fare_type", "2"));
+            }
+            else
+            {
+                //if extrakm is 0 then its fixed fare
+                if (Query.Car.ExtraKmFare < 0.5)
+                {
+                    postData.Add(new KeyValuePair<string, string>("base_fare", "0"));
+                    postData.Add(new KeyValuePair<string, string>("fare", Query.Car.BaseFare.ToString()));
+                    postData.Add(new KeyValuePair<string, string>("fare_type", "1"));
+                }
+                //else its airport and km
+                else
+                {
+                    postData.Add(new KeyValuePair<string, string>("fare", "0"));
+                    postData.Add(new KeyValuePair<string, string>("base_fare", Query.Car.BaseFare.ToString()));
+                    postData.Add(new KeyValuePair<string, string>("fare_type", "2"));
+                }
+            }
+            postData.Add(new KeyValuePair<string, string>("base_km", Query.Car.BaseKm.ToString()));
+
+            if (!Query.PickNow)
+            {
+                //date in format 21/12/2013
+                //time in format 21:15
+                //string dateInForm = Query.PickupTime.ToString("dd/mm/yyyy");
+                string dateInForm = Query.PickupTime.ToString().Substring(0, 10);
+
+                dateInForm = dateInForm.Replace('-', '/');
+                postData.Add(new KeyValuePair<string, string>("pickup_date", dateInForm));
+
+                postData.Add(new KeyValuePair<string, string>("pickup_time", Query.PickupTime.ToString("HH:mm")));
+            }
+            if (((App)App.Current).IsSourceAirport || ((App)App.Current).IsTargetAirport)
+            {
+                if (Query.Pickup.City == "Bangalore")
+                    postData.Add(new KeyValuePair<string, string>("booking_type", "at"));
+                else
+                    postData.Add(new KeyValuePair<string, string>("booking_type", "at-km"));
+
+                if (((App)App.Current).IsSourceAirport)
+                    postData.Add(new KeyValuePair<string, string>("direction", "from"));
+                else
+                    postData.Add(new KeyValuePair<string, string>("direction", "to"));
+
+            }
+            else
+            {
+                postData.Add(new KeyValuePair<string, string>("booking_type", "p2p"));
+            }
+
+            postData.Add(new KeyValuePair<string, string>("appVersion", "5.2"));
+            postData.Add(new KeyValuePair<string, string>("source", "windows"));
+
+            //postData.Add(new KeyValuePair<string, string>("customer_name", customer_name));
+            //postData.Add(new KeyValuePair<string, string>("customer_number", customer_number));
+            //postData.Add(new KeyValuePair<string, string>("user_id", user_id));
+            //postData.Add(new KeyValuePair<string, string>("pickup_address", pickup_address));
+            //postData.Add(new KeyValuePair<string, string>("pickup_area", pickup_area));
+            //postData.Add(new KeyValuePair<string, string>("landmark", landmark));
+            //postData.Add(new KeyValuePair<string, string>("pickup_latitude", pickup_latitude));
+            //postData.Add(new KeyValuePair<string, string>("pickup_longitude", pickup_longitude));
+            //postData.Add(new KeyValuePair<string, string>("booking_type", booking_type));
+            //postData.Add(new KeyValuePair<string, string>("fare_type", fare_type));
+            //postData.Add(new KeyValuePair<string, string>("car_type", car_type));
+            //postData.Add(new KeyValuePair<string, string>("extra_km_fare", extra_km_fare));
+            //postData.Add(new KeyValuePair<string, string>("base_km", base_km));
+            //postData.Add(new KeyValuePair<string, string>("base_fare", base_fare));
+            //postData.Add(new KeyValuePair<string, string>("fare", fare));
+            //postData.Add(new KeyValuePair<string, string>("customer_email", customer_email));
+            //postData.Add(new KeyValuePair<string, string>("city", city));
+            //postData.Add(new KeyValuePair<string, string>("drop_latitude", drop_latitude));
+            //postData.Add(new KeyValuePair<string, string>("drop_longitude", drop_longitude));
+            //postData.Add(new KeyValuePair<string, string>("drop_area", drop_area));
+            //postData.Add(new KeyValuePair<string, string>("direction", direction));
+            //postData.Add(new KeyValuePair<string, string>("coupon_code", coupon_code));
+            //postData.Add(new KeyValuePair<string, string>("source", source));
+            //postData.Add(new KeyValuePair<string, string>("booking_id", booking_id));
+            //postData.Add(new KeyValuePair<string, string>("appVersion", appVersion));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://qa6.aws.rtfs.in/api/consumer-app/book-for-later/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            var obj = data["response_data"];
+                            status.BookingId = (String)data["response_data"]["booking_id"];
+                            status.Message = (String)data["response_data"]["status_message"];
+                            status.IsConfirmed = (bool)data["response_data"]["booking_confirmed"];
+                            status.IsWaiting = (bool)data["response_data"]["wait"];
+                            return status;
+                        }
+                    }
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<LoginDetails> Registration(string mobile, string name, string email, string password, string referal_code, string fut, string appVersion)
+        {
+            var resp = new LoginDetails();
+
+            //API: /api/get-bookings-status/
+            //Method: POST
+            //Params: appVersion, source, bookings_list
+            var postData = new List<KeyValuePair<string, string>>();
+            postData.Add(new KeyValuePair<string, string>("mobile", mobile));
+            postData.Add(new KeyValuePair<string, string>("name", name));
+            postData.Add(new KeyValuePair<string, string>("email", email));
+            postData.Add(new KeyValuePair<string, string>("password", password));
+            postData.Add(new KeyValuePair<string, string>("referal_code", referal_code));
+            postData.Add(new KeyValuePair<string, string>("fut", fut));
+            postData.Add(new KeyValuePair<string, string>("appVersion", appVersion));
+            try
+            {
+                using (var content = new FormUrlEncodedContent(postData))
+                {
+                    var response = await client.PostAsync("http://apistaging.aws.rtfs.in/user/register/", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        String a = await response.Content.ReadAsStringAsync();
+                        JObject data = JObject.Parse(a);
+
+                        if ("success".Equals((string)data["status"]))
+                        {
+                            var obj = data["response_data"];
+                            resp.UserId = (String)obj["user_id"];
+                            //SignInCustomer.UserId = (String)obj["user_id"];
+                            //SignInCustomer.Name = (String)obj["customer_name"];
+                            //SignInCustomer.Email = (String)obj["customer_email"];
+                            //SignInCustomer.Number = (long)obj["customer_number"];
+                            resp.Name = (String)obj["customer_name"];
+                            resp.Number = (String)obj["customer_number"];
+                            resp.Referral_Code = (String)obj["referral_code"];
+                            resp.Referral_Url = (String)obj["referral_url"];
+                            resp.Email = (String)obj["customer_email"];
+                            return resp;
+                        }
+                    }
+                    resp = null;
+                    return resp;
+                }
+            }
+            catch (Exception ex)
+            {
+                resp = null;
+                return resp;
             }
         }
     }

@@ -2,124 +2,12 @@
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Windows;
-using Newtonsoft.Json;
 
 namespace TaxiforSure.Model
 {
     public static class Storage
     {
         private static IsolatedStorageSettings isoSettings = IsolatedStorageSettings.ApplicationSettings;
-
-
-        public static double radiusOfAirportForCity(string city)
-        {
-            Dictionary<string, string> airportDictForCity = Storage.airportDictForCity(city);
-            double radius = double.Parse((string)airportDictForCity["radius"]);
-            return radius;
-
-
-        }
-        
-        public static double latitudeOfAirportForCity(string city)
-        {
-
-            Dictionary<string, string> airportDictForCity = Storage.airportDictForCity(city);
-            double lat = double.Parse((string)airportDictForCity["latitude"]);
-            return lat;
-
-        }
-        
-        public static double longitudeOfAirportForCity(string city)
-        {
-
-
-            Dictionary<string, string> airportDictForCity = Storage.airportDictForCity(city);
-            double longitude = double.Parse((string)airportDictForCity["longitude"]);
-            return longitude;
-        }
-
-        public static string airportNameForCity(string city)
-        {
-
-
-            Dictionary<string, string> airportDictForCity = Storage.airportDictForCity(city);
-            string airportName = (string)airportDictForCity["name"];
-            return airportName;
-        }
-
-        
-        public static Dictionary<string, string> airportDictForCity(string city)
-        {
-
-            Dictionary<string, List<Dictionary<string, string>>> airportDict = Storage.airportDictionary;
-
-            List<Dictionary<string, string>> airportDictForCity = (List<Dictionary<string, string>>)airportDict[city];
-
-            return airportDictForCity[0];
-            //string airportDictionaryString = (string)airportDict[city].ToString();
-            //List<Dictionary<string, string>> airportDictionaryDict = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(airportDictionaryString);
-            
-
-            /*
-            foreach (string key in citySpecificDictionary.Keys)
-            {
-                string value = (string)citySpecificDictionary[key];
-                returnDict.Add(key, value);
-            }
-             * */
-
-
-        }
-
-
-
-        public static Dictionary<string, List<Dictionary<string, string>>> airportDictionary
-        {
-
-            
-            get
-            {
-
-                if (isoSettings.Contains("airportDictionary"))
-                    return (Dictionary<string, List<Dictionary<string, string>>>)isoSettings["airportDictionary"];
-                else
-                    return null;
-
-            }
-
-            
-            set
-            {
-               
-                isoSettings["airportDictionary"] = value;
-            }    
-          
-        } 
-        
-        
-        public static List<string> cityList
-        {
-
-            get
-            {
-                List<string> l = new List<string>();
-                if (isoSettings.Contains("cityList"))
-                    l = (List<string>)isoSettings["cityList"];
-                else
-                    return l;
-
-                return l;
-            }
-            
-            set
-            {
-                isoSettings["cityList"] = value;
-            }
-             
-        }
-        
-         
-
         public static bool IsGpsAllowed
         {
             get
@@ -220,6 +108,36 @@ namespace TaxiforSure.Model
             }
         }
 
+        public static List<CurrentPastBookingDetails> SignInCurrentBookingIds
+        {
+            get
+            {
+                if (isoSettings.Contains("SignInCurrentBookingIds"))
+                    return (List<CurrentPastBookingDetails>)isoSettings["SignInCurrentBookingIds"];
+                else
+                    return null;
+            }
+            set
+            {
+                isoSettings["SignInCurrentBookingIds"] = value;
+            }
+        }
+
+        public static List<CurrentPastBookingDetails> SignInPastBookingIds
+        {
+            get
+            {
+                if (isoSettings.Contains("SignInPastBookingIds"))
+                    return (List<CurrentPastBookingDetails>)isoSettings["SignInPastBookingIds"];
+                else
+                    return null;
+            }
+            set
+            {
+                isoSettings["SignInPastBookingIds"] = value;
+            }
+        }
+
         public static String City
         {
             get
@@ -260,7 +178,31 @@ namespace TaxiforSure.Model
             
         }
 
+        public static bool IsLogin
+        {
+            get
+            {
+                if (!isoSettings.Contains("IsLogin")) return false;
+                else
+                {
+                    return (bool)isoSettings["IsLogin"];
+                }
+            }
+            set { isoSettings["IsLogin"] = value; }
+        }
 
+        public static string UserName
+        {
+            get
+            {
+                if (!isoSettings.Contains("UserName")) return UserName;
+                else
+                {
+                    return (string)isoSettings["UserName"];
+                }
+            }
+            set { isoSettings["UserName"] = value; }
+        }
     }
 }
 

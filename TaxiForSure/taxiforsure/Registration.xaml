@@ -1,0 +1,96 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TaxiforSure.Registration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:model="clr-namespace:TaxiforSure.Model"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="#FFffd800v" toolkit:TurnstileFeatherEffect.FeatheringIndex="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="12"/>
+        </Grid.RowDefinitions>
+        <!--Pivot Control-->
+        <Grid.Resources>
+            <model:IntToVisibility x:Key="IntToVisibility"/>
+            <model:NotIntToVisibility x:Key="NotIntToVisibility"/>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="308*"/>
+            <ColumnDefinition Width="173*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="24,18,0,0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="12"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="TaxiForSure" FontSize="16" FontWeight="SemiBold" LineStackingStrategy="BlockLineHeight" LineHeight="16" Foreground="Black" FontFamily="Segoe WP" Margin="0,-1,0,0"/>
+            <TextBlock Text="Register" FontSize="83" FontWeight="Light" Grid.Row="2" LineStackingStrategy="BlockLineHeight" LineHeight="83" FontFamily="Segoe WP" Foreground="Black" Margin="0,-1,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="24,32,24,0" Grid.ColumnSpan="2" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="0" Grid.Row="0" BorderBrush="Black" Grid.RowSpan="2">
+                <StackPanel  Height="auto" Width="400">
+                    <toolkit:PhoneTextBox Name="txtname" Grid.Row="0" Grid.Column="1" Hint="Name" FontSize="20" Text="" MaxLength="500" TextWrapping="Wrap" Foreground="Black" Background="White"/>
+                    <toolkit:PhoneTextBox Name="txtPhoneNo" Grid.Row="0" Grid.Column="1" Hint="Phone Number" FontSize="20" Text="" MaxLength="10" TextWrapping="Wrap" Foreground="Black" Background="White">
+                        <TextBox.InputScope>
+                            <InputScope>
+                                <InputScopeName NameValue="TelephoneLocalNumber" />
+                            </InputScope>
+                        </TextBox.InputScope>
+                    </toolkit:PhoneTextBox>
+                    <toolkit:PhoneTextBox Name="txtEmail" Grid.Row="0" Grid.Column="1" Hint="Email" FontSize="20" Text="" MaxLength="500" TextWrapping="Wrap" Foreground="Black" Background="White" />
+                    <PasswordBox Name="txtPassword" Grid.Row="0" Grid.Column="1" FontSize="20" MaxLength="10" Foreground="Black" Background="White"  PasswordChar="*" Visibility="Collapsed" LostFocus="txtEmailForHint_LostFocus" />
+                    <toolkit:PhoneTextBox Name="txtPasswordForHint" Hint="Password" Grid.Row="0" Grid.Column="1" FontSize="20" Text="" MaxLength="500" TextWrapping="Wrap" Foreground="Black" Background="White" GotFocus="txtEmailForHint_GotFocus" />
+                    <PasswordBox Name="txtConfirmPassword" Grid.Row="0" Grid.Column="1" FontSize="20" MaxLength="10" Foreground="Black" Background="White" PasswordChar="*" Visibility="Collapsed" LostFocus="txtEmailForHint_LostFocus" />
+                    <toolkit:PhoneTextBox Name="txtConfirmPasswordForHint" Hint="Confirm Password" Grid.Row="0" Grid.Column="1" FontSize="20" Text="" MaxLength="500" TextWrapping="Wrap" Foreground="Black" Background="White" GotFocus="txtEmailForHint_GotFocus" />
+                </StackPanel>
+            </Border>
+            <Grid x:Name="LoadinGrid" Visibility="Collapsed" Background="Transparent" Grid.Row="3">
+                <ProgressBar IsIndeterminate="True" Foreground="Black" />
+            </Grid>
+            <Border BorderThickness="0" Grid.Row="3" BorderBrush="LightGray" Margin="0,9,0,-200" Visibility="Collapsed">
+                <Grid  Height="auto" Width="400" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                        <ColumnDefinition Width="150"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Already Registered?" Grid.Row="0" FontSize="20" Foreground="Gray"  VerticalAlignment="Center" HorizontalAlignment="Right">
+                    </TextBlock>
+                    <Button Name="btnSignIn" Grid.Row="0" Grid.Column="1" Width="150" Height="auto" Content="SIGN IN" FontSize="20" Foreground="Black" Background="LightGray" BorderBrush="DarkGray" BorderThickness="1" Click="btnSignIn_Click"></Button>
+                </Grid>
+            </Border>
+        </Grid>
+
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar >
+        <shell:ApplicationBar BackgroundColor="Black" ForegroundColor="#FFffd800" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton Text="Cancel" x:Name="ProceedBtn" Click="CancelBtn_Click"  IconUri="Assets/Cancel.png"/>
+            <shell:ApplicationBarIconButton IconUri="Assets/next.png" Click="ProceedBtn_Click" Text="Submit"  />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

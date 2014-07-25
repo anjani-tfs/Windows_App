@@ -103,7 +103,7 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Image Height="32" Source="/Assets/Icons/SelectCab.png" VerticalAlignment="Top"/>
-                        <TextBlock x:Name="CarBlock" Grid.Column="2" Grid.Row="0" Text="Tata Indica AC" FontSize="16" Foreground="Black" FontWeight="Normal" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                        <TextBlock x:Name="CarBlock" Grid.Column="2" Grid.Row="0" Text="" FontSize="16" Foreground="Black" FontWeight="Normal" VerticalAlignment="Center" TextWrapping="Wrap"/>
                         <TextBlock x:Name="CarFare" Grid.Column="2" Grid.Row="2" Text="" FontSize="16" Foreground="Black" FontWeight="Normal" VerticalAlignment="Center" TextWrapping="Wrap"/>
                         <TextBlock x:Name="CarExtraFare" Grid.Column="2" Grid.Row="4" Text="" FontSize="16" Foreground="Black" FontWeight="Normal" VerticalAlignment="Center" TextWrapping="Wrap"/>
                     </Grid>

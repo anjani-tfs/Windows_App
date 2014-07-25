@@ -24,7 +24,7 @@
         <!--TitlePanel contains the name of the application and page title-->
 
         <!--ContentPanel - place additional content here-->
-        <ScrollViewer Grid.Row="1" HorizontalAlignment="Stretch">
+        <ScrollViewer Grid.Row="1" HorizontalAlignment="Stretch" Name="gridHolder">
             <Grid x:Name="ContentPanel" Grid.Row="1" Margin="16,20,12,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -41,21 +41,23 @@
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
-                        <ColumnDefinition Width="5"/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="370"/>
+                        <ColumnDefinition Width="40" />
                     </Grid.ColumnDefinitions>
-                    <Image Height="40" Source="/Assets/Icons/FromYellow.png"/>
-                    <TextBlock Name="FromBlock" Grid.Column="2" TextWrapping="Wrap" Text="olassy Golf Links parEmbassy Golf Links parEmbassy Golf Links parEmbassy Golf Links parEmbassy Golf Links park " FontSize="21" LineStackingStrategy="BlockLineHeight" LineHeight="21" VerticalAlignment="Center"/>
+                    <Image Height="40" Source="/Assets/Icons/FromYellow.png" VerticalAlignment="Center" Grid.Column="0"/>
+                    <TextBlock Name="FromBlock" Grid.Column="1" TextWrapping="Wrap" Text="olassy Golf Links parEmbassy Golf Links parEmbassy Golf Links parEmbassy Golf Links parEmbassy Golf Links park " FontSize="21" LineStackingStrategy="BlockLineHeight" LineHeight="21" VerticalAlignment="Center"/>
+                    <Image Name="pickFavourite" Height="40" Source="/Assets/Icons/not_favourite.png" Grid.Column="2" VerticalAlignment="Center" MouseEnter="pickFavourite_MouseEnter" MouseLeave="dropFavourite_MouseLeave" MouseLeftButtonUp="pickFavourite_MouseLeftButtonUp" />
                 </Grid>
 
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
-                        <ColumnDefinition Width="5"/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="370"/>
+                        <ColumnDefinition Width="40"/>
                     </Grid.ColumnDefinitions>
-                    <Image Height="40" Source="/Assets/Icons/ToYellow.png"/>
-                    <TextBlock Name="ToBlock" Grid.Column="2" Text="Indta Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC bank " FontSize="21" LineStackingStrategy="BlockLineHeight" LineHeight="21" VerticalAlignment="Center" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    <Image Height="40" Source="/Assets/Icons/ToYellow.png" VerticalAlignment="Center" Grid.Column="0"/>
+                    <TextBlock Name="ToBlock" Text="Indta Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC banIndira Nagar II stage HDFC bank " FontSize="21" LineStackingStrategy="BlockLineHeight" LineHeight="21" VerticalAlignment="Center" TextWrapping="Wrap"  HorizontalAlignment="Left" Grid.Column="1" />
+                    <Image Name="dropFavourite" Height="40" Source="/Assets/Icons/not_favourite.png" Grid.Column="2" VerticalAlignment="Center" MouseEnter="pickFavourite_MouseEnter" MouseLeave="dropFavourite_MouseLeave" MouseLeftButtonUp="dropFavourite_MouseLeftButtonUp" />
                 </Grid>
 
                 <Grid Grid.Row="4">
@@ -99,6 +101,45 @@
 
             </Grid>
         </ScrollViewer>
+        <Popup x:Name="popup" VerticalAlignment="Top" IsOpen="False" HorizontalAlignment="Center" Width="480">
+            <StackPanel Height="auto" Width="480" Background="White">
+
+                <RadioButton Name="Work" FontSize="20" Width="480" Height="auto" BorderBrush="Black" Background="Black" IsChecked="true"  BorderThickness="1" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" GroupName="loc">
+                    <RadioButton.Content>
+                        <TextBlock Text="Work" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch"  HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton Margin="0,-20" Name="Office" FontSize="20" Width="480" Height="auto" BorderBrush="Black" Background="Black" BorderThickness="1" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" GroupName="loc">
+                    <RadioButton.Content>
+                        <TextBlock Text="Office" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton Margin="0,0" Name="Hangout" FontSize="20" Width="480" Height="auto" BorderBrush="Black" Background="Black" Foreground="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" GroupName="loc">
+                    <RadioButton.Content>
+                        <TextBlock Text="Hangout" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton Margin="0,-20" Name="Other" FontSize="20" Width="480" Height="auto" BorderBrush="Black" Background="Black" Foreground="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" GroupName="loc" Checked="Other_Checked" Unchecked="Other_Unchecked">
+                    <RadioButton.Content>
+                        <TextBlock Text="Other" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <toolkit:PhoneTextBox Name="txtOther" FontSize="20" Text="" TextWrapping="Wrap" Foreground="Black" Background="White" Visibility="Collapsed" BorderBrush="Black" BorderThickness="1">
+                </toolkit:PhoneTextBox>
+                <Button Name="Submit" FontSize="25" Width="580" Height="80" Foreground="Black" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Click="Submit_Click">
+                    <Button.Content>
+                        <TextBlock Text="Submit" Height="auto"  TextAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,-20" Name="Cancel" FontSize="25" Width="580" Height="80" BorderBrush="Black" Background="White" Foreground="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Click="Cancel_Click">
+                    <Button.Content>
+                        <TextBlock Text="Cancel" Height="auto"  TextAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+
+        </Popup>
+
     </Grid>
 
     <toolkit:TransitionService.NavigationInTransition>

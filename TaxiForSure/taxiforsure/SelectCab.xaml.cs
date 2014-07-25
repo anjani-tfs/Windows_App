@@ -212,8 +212,6 @@ namespace TaxiforSure
                             MessageBox.Show("Cannot find cabs for this route.", "TaxiForSure", MessageBoxButton.OK);
                             NavigationService.Navigate(new Uri("/HomePage.xaml", UriKind.RelativeOrAbsolute));
                         }
-
-
                 //    }
                 //}
             }
@@ -251,12 +249,7 @@ namespace TaxiforSure
             }
 
             LoadingGrid.Visibility = Visibility.Collapsed;
-
-            //if fixed fare array exists and fixed fare tab is visible, click it first time when page is loaded
-            //this is done to show fixed fares by default
-            if(myApp.cars_at.Count>0 && tab2.Visibility == System.Windows.Visibility.Visible)   this.tab2_Tap(null, null);
         }
-
 
         protected override void OnBackKeyPress(CancelEventArgs e)
         {

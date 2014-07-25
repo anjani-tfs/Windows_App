@@ -1,5 +1,6 @@
 ﻿using Microsoft.Phone.Controls;
 using Microsoft.Phone.Net.NetworkInformation;
+using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
 using System;
 using System.Collections.Generic;
@@ -54,7 +55,6 @@ namespace TaxiforSure
             App myApp = (App)App.Current;
             myApp.isPickNow = true;
             PickTime2.Text = BookTimePicker.Value.Value.ToShortTimeString();
-
         }
 
         async private void getGPSActivatedForPrefil()
@@ -239,7 +239,15 @@ namespace TaxiforSure
         // Load data for the ViewModel Items
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (Storage.IsLogin)
+            {
 
+                ApplicationBarMenuItem logOutMenuItem = new ApplicationBarMenuItem();
+                ApplicationBar.MenuItems.RemoveAt(0);
+                logOutMenuItem.Text = "Sign Out";
+                ApplicationBar.MenuItems.Insert(0,logOutMenuItem);
+                logOutMenuItem.Click += new EventHandler(ApplicationBarMenuItem_OnClick_5);
+            }
             Query.Car = null;
             MainPanorama.Title = Storage.City;
 
@@ -405,13 +413,44 @@ namespace TaxiforSure
             review.Show();
         }
 
+        private void ApplicationBarMenuItem_OnClick_5(object sender, EventArgs e)
+        {
+            if (Storage.IsLogin)
+            {
+                ApplicationBarMenuItem logOutMenuItem = new ApplicationBarMenuItem();
+                ApplicationBar.MenuItems.RemoveAt(0);
+                logOutMenuItem.Text = "Sign In/Register";
+                ApplicationBar.MenuItems.Insert(0, logOutMenuItem);
+                logOutMenuItem.Click += new EventHandler(ApplicationBarMenuItem_OnClick_5);
+                MessageBox.Show("Sign Out successfully.", "TaxiForSure", MessageBoxButton.OK);
+                Storage.IsLogin = false;
+                Storage.UserName = "Guest";
+            }
+            else
+            {
+                NavigationService.Navigate(new Uri("/Login.xaml", UriKind.RelativeOrAbsolute));
+            }
+
+        }
+
         private void GiveFeedback(object sender, EventArgs e)
         {
-            var et = new EmailComposeTask();
-            et.To = "app-feedback@taxiforsure.com";
-            et.Subject = "Feedback for TaxiForSure Windows App";
-            et.Body="Device Type : Windows \n\n Device OS : Windows Phone \n\n App Version : 1.1.0.0 \n\n Mobile Number : "+Customer.Number;
-            et.Show();
+            if (Storage.IsLogin)
+            {
+                var et = new EmailComposeTask();
+                et.To = "app-feedback@taxiforsure.com";
+                et.Subject = "Feedback for TaxiForSure Windows App";
+                et.Body = "Device Type : Windows \n\n Device OS : Windows Phone \n\n App Version : 1.0.0.0 \n\n Mobile Number : " + SignInCustomer.Number;
+                et.Show();
+            }
+            else
+            {
+                var et = new EmailComposeTask();
+                et.To = "app-feedback@taxiforsure.com";
+                et.Subject = "Feedback for TaxiForSure Windows App";
+                et.Body = "Device Type : Windows \n\n Device OS : Windows Phone \n\n App Version : 1.0.0.0 \n\n Mobile Number : " + Customer.Number;
+                et.Show();
+            }
         }
 
         private void Settings_Click(object sender, EventArgs e)

@@ -242,7 +242,7 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
                                 <!--<Image Height="32" Source="/Assets/Icons/Calendar.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Right"/>
-								<TextBlock Grid.Column="2" Text="Date" FontSize="35" Opacity=".83" FontWeight="Light"/>-->
+								<TextBlock Gridsign.Column="2" Text="Date" FontSize="35" Opacity=".83" FontWeight="Light"/>-->
                             </Grid>
                             <!--<toolkit:DatePicker Name="BookDatePicker" Grid.Row="4" BorderBrush="#FFbdbdbd" BorderThickness="1" Width="151" Margin="24,41,0,8" HorizontalAlignment="Left" Foreground="Black" Grid.RowSpan="2"/>-->
                             <Grid Grid.Row="6" Margin="0,0,0,10" Grid.RowSpan="2">
@@ -317,8 +317,9 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar BackgroundColor="Black" ForegroundColor="#FFffd800">
-            <shell:ApplicationBarIconButton Text="Next" x:Name="ProceedBtn" Click="ProceedBtn_OnClick" IconUri="Assets/next.png"/>
+            <shell:ApplicationBarIconButton Text="Next" x:Name="CancelBtn" Click="ProceedBtn_OnClick" IconUri="Assets/next.png"/>
             <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Sign In/Register" Click="ApplicationBarMenuItem_OnClick_5"/>
                 <shell:ApplicationBarMenuItem Text="View Bookings and Track Taxi" Click="ApplicationBarMenuItem_OnClick_2"/>
                 <!--<shell:ApplicationBarMenuItem Text="Price Chart" Click="ApplicationBarMenuItem_OnClick"/>-->
                 <shell:ApplicationBarMenuItem Text="Change City" Click="ApplicationBarMenuItem_OnClick4"/>

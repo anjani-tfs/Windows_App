@@ -21,6 +21,10 @@ namespace TaxiforSure
         List<GeoCoordinate> MyCoordinates = new List<GeoCoordinate>();
         RouteQuery MyQuery = null;
         GeocodeQuery Mygeocodequery = null;
+        CurrentPastBookingDetails storesignIndata=null;
+        BookingData storedata=null;
+
+        bool isPicked = true;
 
         public Location()
         {
@@ -29,83 +33,196 @@ namespace TaxiforSure
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            try
+            base.OnNavigatedTo(e);
+
+            if (Storage.IsLogin)
             {
-                base.OnNavigatedTo(e);
-                App myApp = (App)App.Current;
-                int index = int.Parse(NavigationContext.QueryString["index"]);
-                String dataStore = NavigationContext.QueryString["data"];
-                BookingData data;
-                if (dataStore == "current")
-                {
-                    var defaultBooking = from names in Storage.CurrentBookingIds
-                                         orderby names.Time ascending
-                                         select names;
-                    data = defaultBooking.ElementAt(index);
-                }
-                else
-                {
-                    data = Storage.PastBookingIds.ElementAt(index);
-                }
-                VehicleNumberRun.Text = data.CarName;
-
-                DriverDetailPanel.Visibility = Visibility.Collapsed;
-                FromBlock.Text = data.From;
-                ToBlock.Text = data.To;
-
-                var client = new MyClient();
-                var driver = await client.CallDriver(data.BookingId);
-                if (driver != null)
-                {
-                    if (driver.Number.Length > 0) DriverDetailPanel.Visibility = Visibility.Visible;
-                    PhoneBlock.Text = driver.Number;
-                    NameBlock.Text = driver.Name;
-                    if (!String.IsNullOrWhiteSpace(driver.VehicleNumber)) VehicleGap.Text = "   ";
-
-                    if (driver.Status == "Assigned")
+                try
+                {  
+                    App myApp = (App)App.Current;
+                    int index = int.Parse(NavigationContext.QueryString["index"]);
+                    String dataStore = NavigationContext.QueryString["data"];
+                    CurrentPastBookingDetails data;
+                    if (dataStore == "current")
                     {
-                        VehicleNumberRun.Text = driver.VehicleNumber;
-                        CarNameRun.Text = data.CarName;
+                        var defaultBooking = from names in Storage.SignInCurrentBookingIds
+                                             orderby names.Time ascending
+                                             select names;
+                        data = defaultBooking.ElementAt(index);
+                    }
+                    else
+                    {
+                        data = Storage.SignInPastBookingIds.ElementAt(index);
+                    }
 
-                        var ts = await client.TrackTaxi(data.BookingId);
-                        
-                        if (ts != null)
+                   // VehicleNumberRun.Text = data.CarName;
+
+                    DriverDetailPanel.Visibility = Visibility.Collapsed;
+                    FromBlock.Text = data.From;
+                    ToBlock.Text = data.To;
+
+                    var client = new MyClient();
+                    var driver = await client.CallDriver(data.BookingId);
+                    if (driver != null)
+                    {
+                        if (driver.Number.Length > 0) DriverDetailPanel.Visibility = Visibility.Visible;
+                        PhoneBlock.Text = driver.Number;
+                        NameBlock.Text = driver.Name;
+                        if (!String.IsNullOrWhiteSpace(driver.VehicleNumber)) VehicleGap.Text = "   ";
+
+                        if (driver.Status == "Assigned")
                         {
-                            if (ts.StatusId >= 6)
-                            {
-                                if (Storage.PastBookingIds == null) Storage.PastBookingIds = new List<BookingData>();
-                                if (!Storage.PastBookingIds.Contains(data))
-                                    Storage.PastBookingIds.Insert(0, data);
-                                Storage.CurrentBookingIds.Remove(data);
-                            }
+                            VehicleNumberRun.Text = driver.VehicleNumber;
+                           // CarNameRun.Text = data.CarName;
 
-                            //driver is assigned and current location is there
-                            ShowOnMap(ts);
-                            if (!string.IsNullOrEmpty(ts.Message))
+                            var ts = await client.TrackTaxi(data.BookingId);
+
+                            if (ts != null)
                             {
-                                grdMessage.Background = new SolidColorBrush(Color.FromArgb(255, 248, 218, 21));
-                                MessageBlock.Foreground = new SolidColorBrush(Colors.Black);
-                                MessageBlock.FontWeight = FontWeights.Bold;
-                                MessageBlock.Text = ts.Message;
+                                if (ts.StatusId >= 6)
+                                {
+                                    if (Storage.SignInPastBookingIds == null) Storage.SignInPastBookingIds = new List<CurrentPastBookingDetails>();
+                                    if (!Storage.SignInPastBookingIds.Contains(data))
+                                        Storage.SignInPastBookingIds.Insert(0, data);
+                                    Storage.SignInCurrentBookingIds.Remove(data);
+                                }
+
+                                //driver is assigned and current location is there
+                                if (dataStore == "current")
+                                {
+                                    ShowOnMap(ts);
+                                }
+                                else
+                                {
+                                    AddOnMap(driver.PickupLocation, LocationOf.Customer, true);
+                                }
+                                if (!string.IsNullOrEmpty(ts.Message))
+                                {
+                                    grdMessage.Background = new SolidColorBrush(Color.FromArgb(255, 248, 218, 21));
+                                    MessageBlock.Foreground = new SolidColorBrush(Colors.Black);
+                                    MessageBlock.FontWeight = FontWeights.Bold;
+                                    MessageBlock.Text = ts.Message;
+                                }
                             }
+                        }
+                        else
+                        {
+                            //driver is not assigned or non vts
+                            AddOnMap(driver.PickupLocation, LocationOf.Customer, true);
+                            MessageBlock.Text = driver.Message;
                         }
                     }
                     else
                     {
-                        //driver is not assigned or non vts
-                        AddOnMap(driver.PickupLocation, LocationOf.Customer, true);
-                        MessageBlock.Text = driver.Message;
+                        //didn't return from call driver API successfully
+                        GeoCoordinate geo = new GeoCoordinate();
+                        string[] latlong = data.pickup_latlong.Split(',');
+                        if (latlong.Length > 0)
+                        {
+                            geo.Latitude =Convert.ToDouble(latlong[0]);
+                            geo.Longitude =Convert.ToDouble(latlong[1].ToString());
+                            AddOnMap(geo, LocationOf.Customer, true);
+                        }
+                        MessageBlock.Text = "Details not available at the moment";
                     }
+
+                    storesignIndata = data;
                 }
-                else
+                catch (Exception exp)
                 {
-                    //didn't return from call driver API successfully
-                    MessageBlock.Text = "Details not available at the moment";
+                    Debug.WriteLine(exp.Message);
                 }
             }
-            catch (Exception exp)
+            else
             {
-                Debug.WriteLine(exp.Message);
+                pickFavourite.Visibility = Visibility.Collapsed;
+                dropFavourite.Visibility = Visibility.Collapsed;
+
+                try
+                {
+                    App myApp = (App)App.Current;
+                    int index = int.Parse(NavigationContext.QueryString["index"]);
+                    String dataStore = NavigationContext.QueryString["data"];
+                    BookingData data;
+                    if (dataStore == "current")
+                    {
+                        var defaultBooking = from names in Storage.CurrentBookingIds
+                                             orderby names.Time ascending
+                                             select names;
+                        data = defaultBooking.ElementAt(index);
+                    }
+                    else
+                    {
+                        data = Storage.PastBookingIds.ElementAt(index);
+                    }
+                    VehicleNumberRun.Text = data.CarName;
+
+                    DriverDetailPanel.Visibility = Visibility.Collapsed;
+                    FromBlock.Text = data.From;
+                    ToBlock.Text = data.To;
+
+                    var client = new MyClient();
+                    var driver = await client.CallDriver(data.BookingId);
+                    if (driver != null)
+                    {
+                        if (driver.Number.Length > 0) DriverDetailPanel.Visibility = Visibility.Visible;
+                        PhoneBlock.Text = driver.Number;
+                        NameBlock.Text = driver.Name;
+                        if (!String.IsNullOrWhiteSpace(driver.VehicleNumber)) VehicleGap.Text = "   ";
+
+                        if (driver.Status == "Assigned")
+                        {
+                            VehicleNumberRun.Text = driver.VehicleNumber;
+                            CarNameRun.Text = data.CarName;
+
+                            var ts = await client.TrackTaxi(data.BookingId);
+
+                            if (ts != null)
+                            {
+                                if (ts.StatusId >= 6)
+                                {
+                                    if (Storage.PastBookingIds == null) Storage.PastBookingIds = new List<BookingData>();
+                                    if (!Storage.PastBookingIds.Contains(data))
+                                        Storage.PastBookingIds.Insert(0, data);
+                                    Storage.CurrentBookingIds.Remove(data);
+                                }
+
+                                //driver is assigned and current location is there
+                                if (dataStore == "current")
+                                {
+                                    ShowOnMap(ts);
+                                }
+                                else
+                                {
+                                    AddOnMap(driver.PickupLocation, LocationOf.Customer, true);
+                                }
+                                if (!string.IsNullOrEmpty(ts.Message))
+                                {
+                                    grdMessage.Background = new SolidColorBrush(Color.FromArgb(255, 248, 218, 21));
+                                    MessageBlock.Foreground = new SolidColorBrush(Colors.Black);
+                                    MessageBlock.FontWeight = FontWeights.Bold;
+                                    MessageBlock.Text = ts.Message;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            //driver is not assigned or non vts
+                            AddOnMap(driver.PickupLocation, LocationOf.Customer, true);
+                            MessageBlock.Text = driver.Message;
+                        }
+                    }
+                    else
+                    {
+                        // did n't return from call driver API successfully
+                        MessageBlock.Text = "Details not available at the moment";
+                    }
+                    storedata = data;
+                }
+                catch (Exception exp)
+                {
+                    Debug.WriteLine(exp.Message);
+                }
             }
         }
 
@@ -260,5 +377,146 @@ namespace TaxiforSure
 
         }
 
+        private void pickFavourite_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Image img = (Image)sender;
+            img.Opacity = 0.5;
+        }
+
+        private void dropFavourite_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Image img = (Image)sender;
+            img.Opacity = 1;
+        }
+
+        private async void pickFavourite_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            isPicked = true;
+            popup.IsOpen = true;
+            gridHolder.IsEnabled = false;
+            Work.IsChecked = true;
+            txtOther.Visibility = Visibility.Collapsed;
+        }
+
+        private async void dropFavourite_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            isPicked = false;
+            popup.IsOpen = true;
+            gridHolder.IsEnabled = false;
+            Work.IsChecked = true;
+            txtOther.Visibility = Visibility.Collapsed;
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            popup.IsOpen = false;
+            gridHolder.IsEnabled = true;
+            pickFavourite.Opacity = 1;
+            dropFavourite.Opacity = 1;
+        }
+
+        private async void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            string title=string.Empty;
+            if(Other.IsChecked==true && string.IsNullOrEmpty(txtOther.Text.Trim()))
+            {
+                MessageBox.Show("Please enter other field.", "TaxiForSure", MessageBoxButton.OK);
+                txtOther.Focus();
+                return;
+            }
+
+            if (Work.IsChecked == true)
+                title = "Work";
+            else if (Office.IsChecked == true)
+                title = "Office";
+            else if (Hangout.IsChecked == true)
+                title = "Hangout";
+            else if (Other.IsChecked == true)
+                title = txtOther.Text;
+            if (isPicked)
+            {
+                MyClient client = new MyClient();
+                if (Storage.IsLogin)
+                {
+                    List<FavouriteDetails> fav = new List<FavouriteDetails>();
+                    FavouriteDetails favPicks = new FavouriteDetails();
+                    favPicks.city = storesignIndata.pickup_city;
+                    favPicks.address = storesignIndata.From;
+                    favPicks.landmark = storesignIndata.pickup_area;
+                    string[] latlong = storesignIndata.pickup_latlong.Split(',');
+                    favPicks.latitude = latlong[0];
+                    favPicks.longitude = latlong[1];
+                    favPicks.title = title;
+                    favPicks.type = "office";
+                    fav.Add(favPicks);
+                    FavouriteConfirmation status = await client.AddFavourites(SignInCustomer.UserId, fav, "5.2");
+                    if (status!=null)
+                    {
+                        MessageBox.Show("Successfully added in favourite list.", "TaxiForSure", MessageBoxButton.OK);
+                        pickFavourite.Source = new BitmapImage(new Uri("Assets/Icons/favourite.png", UriKind.RelativeOrAbsolute));
+                        pickFavourite.MouseLeftButtonUp -= new System.Windows.Input.MouseButtonEventHandler(pickFavourite_MouseLeftButtonUp);
+                        popup.IsOpen = false;
+                        gridHolder.IsEnabled = true;
+                        pickFavourite.Opacity = 1;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed.", "TaxiForSure", MessageBoxButton.OK);
+                    }
+                }
+            }
+            else
+            {
+                MyClient client = new MyClient();
+                if (Storage.IsLogin)
+                {
+                    List<FavouriteDetails> fav = new List<FavouriteDetails>();
+                    FavouriteDetails favDrops = new FavouriteDetails();
+                    favDrops.city = storesignIndata.pickup_city;
+                    favDrops.address = storesignIndata.To;
+                    favDrops.landmark = storesignIndata.drop_area;
+                    string[] latlong = storesignIndata.pickup_latlong.Split(',');
+                    favDrops.latitude = latlong[0];
+                    favDrops.longitude = latlong[1];
+                    favDrops.title = title;
+                    favDrops.type = "office";
+                    fav.Add(favDrops);
+                    FavouriteConfirmation status = await client.AddFavourites(SignInCustomer.UserId, fav, "5.2");
+                    if (status!=null)
+                    {
+                        if (status.Status == true)
+                        {
+                            MessageBox.Show("Successfully added in favourite list.", "TaxiForSure", MessageBoxButton.OK);
+                            dropFavourite.Source = new BitmapImage(new Uri("Assets/Icons/favourite.png", UriKind.RelativeOrAbsolute));
+                            dropFavourite.MouseLeftButtonUp -= new System.Windows.Input.MouseButtonEventHandler(dropFavourite_MouseLeftButtonUp);
+                            popup.IsOpen = false;
+                            gridHolder.IsEnabled = true;
+                            dropFavourite.Opacity = 1;
+                            txtOther.Text = string.Empty;
+                        }
+                        else
+                        {
+                            MessageBox.Show(status.Message, "TaxiForSure", MessageBoxButton.OK);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed.", "TaxiForSure", MessageBoxButton.OK);
+                    }
+                }
+            }
+        }
+
+        private void Other_Checked(object sender, RoutedEventArgs e)
+        {
+            txtOther.Visibility = Visibility.Visible;
+            txtOther.Focus();
+        }
+
+        private void Other_Unchecked(object sender, RoutedEventArgs e)
+        {
+            txtOther.Text = string.Empty;
+            txtOther.Visibility = Visibility.Collapsed;
+        }
     }
 }

@@ -16,34 +16,53 @@
     <phone:PhoneApplicationPage.Resources>
         <DataTemplate x:Key="ListItemTemplate">
             <StackPanel HorizontalAlignment="Left" Margin="0,0,0,18">
-                <TextBlock FontSize="16"  Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="370"></ColumnDefinition>
+                        <ColumnDefinition Width="2"></ColumnDefinition>
+                        <ColumnDefinition Width="60"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock FontSize="16"  Foreground="#FF3a3a3a" TextWrapping="Wrap" Grid.Row="0" Grid.Column="0">
                                     <Run Text="Pickup: " FontWeight="Bold"/>
                                     <Run Text="{Binding From}"/>
-                </TextBlock>
-                <TextBlock FontSize="16" Foreground="#FF3a3a3a" TextWrapping="Wrap">
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" TextWrapping="Wrap" Grid.Row="1" Grid.Column="0">
                                     <Run Text="Drop: " FontWeight="Bold"/>
                                     <Run Text="{Binding To}"/>
-                </TextBlock>
-                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="2" Grid.Column="0">
                                     <Run Text="Time: " FontWeight="Bold"/>
                                     <Run Text="{Binding Time}"/>
-                </TextBlock>
-                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="3" Grid.Column="0">
                                     <Run Text="Fare: " FontWeight="Bold"/>
                                     <Run Text="{Binding Fare}"/>
-                </TextBlock>
-                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="4" Grid.Column="0">
                                     <Run Text="Booking ID: " FontWeight="Bold"/>
                                     <Run Text="{Binding BookingId}"/>
-                </TextBlock>
-                <TextBlock FontSize="16" Foreground="#FF3a3a3a">
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="5" Grid.Column="0">
                                     <Run Text="Booking Status: " FontWeight="Bold"/>
                                     <Run Text="{Binding BookingStatus}"/>
-                </TextBlock>
+                    </TextBlock>
+                    <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="6" Background="LightGray"></Border>
+                    <Button Name="btnPastBookingMenu" Height="100" Width="50" Content="Click" Foreground="Black" FontSize="10" Background="White" Tag="{Binding BookingId}" Grid.Row="0" Grid.Column="2" Grid.RowSpan="6" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnPastBookingMenu_Click"></Button>
+                </Grid>
             </StackPanel>
+            
         </DataTemplate>
+        
         <DataTemplate x:Key="CurrentListItemTemplate">
-            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,18">
+            <!--<StackPanel HorizontalAlignment="Left" Margin="0,0,0,18">
                 <toolkit:ContextMenuService.ContextMenu>
 
                     <toolkit:ContextMenu IsZoomEnabled="True" x:Name="ContextMenu" >
@@ -74,10 +93,66 @@
                                     <Run Text="Booking ID: " FontWeight="Bold"/>
                                     <Run Text="{Binding BookingId}"/>
                 </TextBlock>
+                <TextBlock Name="txtCurrentMenu" FontSize="16" Foreground="#FFffd800" Tag="{Binding BookingId}" TextDecorations="Underline" Text="Click here" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0" MouseLeftButtonUp="txtCurrentMenu_MouseLeftButtonUp">
+                </TextBlock>
+            </StackPanel>-->
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,18" >
+                <!--<toolkit:ContextMenuService.ContextMenu>
+
+                    <toolkit:ContextMenu IsZoomEnabled="True" x:Name="ContextMenu" >
+
+                        <toolkit:MenuItem x:Name="Delete" Tag="{Binding}" Header="Cancel Booking" Click="Delete_OnClick"/>
+
+
+                    </toolkit:ContextMenu>
+
+                </toolkit:ContextMenuService.ContextMenu>-->
+
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="370"></ColumnDefinition>
+                        <ColumnDefinition Width="2"></ColumnDefinition>
+                        <ColumnDefinition Width="60"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock FontSize="16"  Foreground="#FF3a3a3a" TextWrapping="Wrap" Grid.Row="0" Grid.Column="0">
+                                    <Run Text="Pickup: " FontWeight="Bold"/>
+                                    <Run Text="{Binding From}"/>
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" TextWrapping="Wrap" Grid.Row="1" Grid.Column="0">
+                                    <Run Text="Drop: " FontWeight="Bold"/>
+                                    <Run Text="{Binding To}"/>
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="2" Grid.Column="0">
+                                    <Run Text="Time: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Time}"/>
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="3" Grid.Column="0">
+                                    <Run Text="Fare: " FontWeight="Bold"/>
+                                    <Run Text="{Binding Fare}"/>
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="4" Grid.Column="0">
+                                    <Run Text="Booking ID: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingId}"/>
+                    </TextBlock>
+                    <TextBlock FontSize="16" Foreground="#FF3a3a3a" Grid.Row="5" Grid.Column="0">
+                                    <Run Text="Booking Status: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingStatus}"/>
+                    </TextBlock>
+                    <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="6" Background="LightGray"></Border>
+                    <Button Name="btnCurrentBookingMenu" Height="100" Width="50" Content="Click" Tag="{Binding BookingId}" Foreground="Black" FontSize="10" Background="White" Grid.Row="0" Grid.Column="2" Grid.RowSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnCurrentBookingMenu_Click"></Button>
+                </Grid>
+
             </StackPanel>
         </DataTemplate>
     </phone:PhoneApplicationPage.Resources>
-
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="{StaticResource ImageBgBrush}">
 
@@ -92,45 +167,87 @@
             <TextBlock HorizontalAlignment="Center" Foreground="Black" Text="Please wait..."></TextBlock>
             <ProgressBar IsIndeterminate="True" Foreground="#FFffd800" Width="473" />
         </StackPanel>
+        <Popup x:Name="popup" VerticalAlignment="Center" IsOpen="False" HorizontalAlignment="Center" Width="480">
+            <StackPanel Height="auto" Width="480" Background="Transparent">
+                <TextBlock FontWeight="Bold" Name="bookingidPopup" FontSize="16" Foreground="#FF3a3a3a" Grid.Row="0" TextAlignment="Center" Visibility="Collapsed">
+                                    <Run Text="Booking ID: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingId}"/>
+                </TextBlock>
+                <Button Name="edit" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" Grid.Row="1" Click="edit_Click" GotFocus="edit_GotFocus" LostFocus="edit_LostFocus" MouseLeave="edit_MouseLeave" Visibility="Collapsed">
+                    <Button.Content>
+                        <TextBlock Text="Edit Booking Details" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,-20" Name="receipt" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Click="receipt_Click" GotFocus="edit_GotFocus" LostFocus="edit_LostFocus" MouseLeave="edit_MouseLeave" Foreground="Black">
+                    <Button.Content>
+                        <TextBlock Text="Mail Invoice" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <toolkit:PhoneTextBox Name="txtEmail" FontSize="20" Text="" TextWrapping="Wrap" Foreground="Black" Background="White" Visibility="Collapsed" BorderBrush="Black" BorderThickness="1">
+                </toolkit:PhoneTextBox>
+                <Button Margin="0,-20" Name="receiptSend" Visibility="Collapsed" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Foreground="Black" Click="receiptSend_Click">
+                    <Button.Content>
+                        <TextBlock Text="Submit" Height="auto"  TextAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,-20" Name="receiptCancel" Visibility="Collapsed" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Foreground="Black" Click="receiptCancel_Click">
+                    <Button.Content>
+                        <TextBlock Text="Cancel" Height="auto"  TextAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,0" Name="Cancel" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" Foreground="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Click="Cancel_Click" GotFocus="edit_GotFocus" LostFocus="edit_LostFocus" MouseLeave="edit_MouseLeave">
+                    <Button.Content>
+                        <TextBlock Text="Cancel" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+            </StackPanel>
 
-        <!--Pivot Control-->
+        </Popup>
+
+        <Popup x:Name="popupCurrentBooking" VerticalAlignment="Center" IsOpen="False" HorizontalAlignment="Center" Width="480">
+            <Grid Height="auto" Width="480" Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontWeight="Bold" Name="bookingidCurrentPopup" FontSize="16" Foreground="#FF3a3a3a" Grid.Row="0" TextAlignment="Center" Visibility="Collapsed">
+                                    <Run Text="Booking ID: " FontWeight="Bold"/>
+                                    <Run Text="{Binding BookingId}"/>
+                </TextBlock>
+                <Button Name="CancelBooking" FontSize="36" Width="580" Height="100" Foreground="Black" BorderBrush="Black" Background="White" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" GotFocus="edit_GotFocus" LostFocus="edit_LostFocus" MouseLeave="edit_MouseLeave" Click="CancelBooking_Click">
+                    <Button.Content>
+                        <TextBlock Text="Cancel Booking" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,-20" Name="Close" FontSize="36" Width="580" Height="100" BorderBrush="Black" Background="White" Foreground="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" GotFocus="edit_GotFocus" LostFocus="edit_LostFocus" MouseLeave="edit_MouseLeave" Click="Close_Click">
+                    <Button.Content>
+                        <TextBlock Text="Close" Height="auto"  TextAlignment="Left" VerticalAlignment="Stretch" HorizontalAlignment="Left" Padding="0" FontSize="25" Width="450" FontFamily="Segoe WP" />
+                    </Button.Content>
+                </Button>
+            </Grid>
+
+        </Popup>
+        
         <phone:Pivot Foreground="Black" x:Name="MainPivot" SelectedIndex="1">
             <phone:Pivot.TitleTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" FontSize="83" FontWeight="ExtraLight" LineStackingStrategy="BlockLineHeight" LineHeight="85" Margin="0,0,0,30"/>
                 </DataTemplate>
             </phone:Pivot.TitleTemplate>
-               
-            <!--<phone:PivotItem Margin="24,28,24,0" x:Name="Pivot1">
-                <phone:PivotItem.Header>
-                    <TextBlock Text="booking status" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0" x:Name="BkStatus" Foreground="#FFffc600"/>
-                </phone:PivotItem.Header>
-                <StackPanel HorizontalAlignment="Left">
-                    <TextBlock Text="BOOKING ID" FontWeight="Bold" FontSize="21" Opacity=".83"/>
-                    <TextBox Name="BookingIdBox" Style="{StaticResource TxtBoxStyle}" BorderBrush="#FFc8c8c9" Width="290" Margin="0,10" Background="{x:Null}" Text="TFS-PP-C770063" BorderThickness="1"/>
-
-                    <TextBlock Text="PHONE NO" FontWeight="Bold" FontSize="21" Opacity=".83" Margin="0,15,0,0"/>
-                    <TextBox Name="PhoneBox" Style="{StaticResource TxtBoxStyle}" BorderBrush="#FFc8c8c9" Width="290" Margin="0,10" Background="{x:Null}" BorderThickness="1"/>
-                </StackPanel>
-            </phone:PivotItem>-->
             <phone:PivotItem x:Name="Pivot2">
                 <phone:PivotItem.Header>
                     <TextBlock Text="Past Bookings" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0"  x:Name="PastBooking"  Foreground="Black"/>
                 </phone:PivotItem.Header>
-                <ListBox x:Name="PastBookingList" Margin="16,0" ItemTemplate="{StaticResource ListItemTemplate}"/>
+                <ListBox x:Name="PastBookingList" SelectionChanged="OnSelectionChangedPast" Margin="16,0" ItemTemplate="{StaticResource ListItemTemplate}"/>   
             </phone:PivotItem>
-            <phone:PivotItem Margin="24,28,24,0" x:Name="Pivot1">
+            <phone:PivotItem  x:Name="Pivot1">
                 <phone:PivotItem.Header>
                     <TextBlock Text="Current Bookings" FontSize="42" FontFamily="Segoe WP" FontWeight="Light" Margin="3,-4,0,0" x:Name="CurrentBooking" Foreground="Black"/>
                 </phone:PivotItem.Header>
                 <ListBox x:Name="CurrentBookingList" SelectionChanged="OnSelectionChanged" Margin="16,0" ItemTemplate="{StaticResource CurrentListItemTemplate}"/>
             </phone:PivotItem>
-
         </phone:Pivot>
     </Grid>
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar BackgroundColor="#FFffd800">
-            <shell:ApplicationBarIconButton IconUri="Assets/check.png" Click="ApplicationBarIconButton_OnClick" Text="Check"/>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 </phone:PhoneApplicationPage>
